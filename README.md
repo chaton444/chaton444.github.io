@@ -40,7 +40,7 @@ El menú de navegación incluye enlaces a las siguientes secciones:
 
 ![Imagen 1](Fotos/1.PNG)
 ![Imagen 2](Fotos/2.PNG)
-![Imagen 3](Fotos/3.PNG)
+![Imagen 3](Fotos/4.PNG)
 
 
 
