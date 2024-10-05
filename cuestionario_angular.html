@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Cuestionario de Angular</title>
+    <style>
+body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            background-color: #e9f5ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 5px solid #ff0095;
+            transition: background-color 0.3s;
+        }
+
+        .question:hover {
+            background-color: #ffd0e8;
+        }
+
+        .answer {
+            margin-left: 20px;
+            color: #555;
+            background: #f7f7f7;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .answer code {
+            background: #e8e8e8;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 25px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 8px 0;
+            background-color: #000000;
+            color: white;
+            width: 100%;
+            bottom: 0;
+        }
+        .submit-button {
+    background-color: #ff0095; 
+    margin-left: 40%;
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
+}
+
+.submit-button:active {
+    transform: translateY(0); 
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 ><i style="color: #ff0606;" onmouseover="this.style.color='#44c8f0';" onmouseout="this.style.color='#0659ff';"  class="fas fa-code"></i>Angular Test <i class="fab fa-angular"></i></h1>
+    </header>
+    
+    <nav>
+        <a style="color: #e36060;" onmouseover="this.style.color='#ff8c00';" onmouseout="this.style.color='#e36060';" href="javaTemario.html">
+            Temario Java <i class="fab fa-java"></i>
+       </a>
+       <a style="color: #e36060;" onmouseover="this.style.color='#ff8c00';" onmouseout="this.style.color='#e36060';" href="cuestionario_java.html">
+         <i class="fas fa-check-circle"></i>  Java Test  
+       </a>
+       <a style="color: #b3ddb9;" onmouseover="this.style.color='#07cb00';" onmouseout="this.style.color='#b3ddb9';" href="temarioSpringBoot.html">
+           Temario Spring Boot <i class="fas fa-leaf"></i>
+       </a>
+       <a style="color: #b3ddb9;" onmouseover="this.style.color='#07cb00';" onmouseout="this.style.color='#b3ddb9';" href="cuestionarioSpringBoot.html">
+           <i class="fas fa-check-circle"></i> Spring Boot Test
+       </a>
+       <a style="color: #f3f3f3;" onmouseover="this.style.color='#0bc1fe';" onmouseout="this.style.color='#f3f3f3';" href="index.html">
+           <i class="fas fa-home"></i> 
+       </a>
+       <a style="color: #ddb3cc;" onmouseover="this.style.color='#fe0ba1';" onmouseout="this.style.color='#ddb3cc';" href="angularTemario.html">
+           <i class="fab fa-angular"></i> Temario Angular
+       </a>
+       <a style="color: #ddb3cc;" onmouseover="this.style.color='#fe0ba1';" onmouseout="this.style.color='#ddb3cc';" href="cuestionario_angular.html">
+         <i class="fas fa-check-circle"></i></i> Angular Test
+       </a>
+       <a style="color: #ddb3cc;" onmouseover="this.style.color='#fe0ba1';" onmouseout="this.style.color='#ddb3cc';" href="cuestionario_mix_Ang_Jav.html">
+           <i class="fas fa-check-circle"></i> Java and Angular Test
+       </a>
+       <a style="color: #b3cddd;" onmouseover="this.style.color='#bd0bfe';" onmouseout="this.style.color='#b3cddd';" href="https://github.com/chaton444">
+           <i class="fab fa-github"></i> GitHub
+       </a>  
+    
+    </nav>
+
+    
+    <h1 style="font-size: 3em; background: linear-gradient(55deg, rgb(253, 4, 187), #4ce8be); -webkit-background-clip:text; color: transparent;">Cuestionario de Angular</h1>
+    <div class="container">
+    <form id="quizForm"></form>
+    <button type="button" onclick="submitQuiz()" class="submit-button">Enviar</button>
+
+
+    <script>
+        const questions = [
+            {
+                question: "¿Qué es Angular?",
+                options: ["Un lenguaje de programación", "Un marco de trabajo para construir aplicaciones web", "Una base de datos"],
+                answer: 1
+            },
+            {
+                question: "¿Qué tipo de arquitectura utiliza Angular?",
+                options: ["Monolítica", "Basada en componentes", "Basada en servicios"],
+                answer: 1
+            },
+            {
+                question: "¿Qué es un componente en Angular?",
+                options: ["Una parte de la interfaz de usuario", "Una clase de servicio", "Una directiva"],
+                answer: 0
+            },
+            {
+                question: "¿Cuál es la función de los servicios en Angular?",
+                options: ["Almacenar datos", "Proveer lógica de negocio", "Gestionar la interfaz de usuario"],
+                answer: 1
+            },
+            {
+                question: "¿Qué es el `@Injectable` en Angular?",
+                options: ["Un decorador para componentes", "Un decorador para servicios", "Un decorador para módulos"],
+                answer: 1
+            },
+            {
+                question: "¿Qué es el `ngIf` en Angular?",
+                options: ["Una directiva para manejar eventos", "Una directiva para mostrar u ocultar elementos", "Una directiva para manejar formularios"],
+                answer: 1
+            },
+            {
+                question: "¿Qué es el `ngFor` en Angular?",
+                options: ["Una directiva para mostrar datos en listas", "Una directiva para manejar eventos", "Un pipe para formatear datos"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es un `module` en Angular?",
+                options: ["Un tipo de componente", "Un contenedor que agrupa componentes, servicios y directivas relacionados", "Una clase para manejar formularios"],
+                answer: 1
+            },
+            {
+                question: "¿Cómo se declara un componente en Angular?",
+                options: ["Usando el decorador `@Component`", "Usando el decorador `@Directive`", "Usando el decorador `@Injectable`"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es el `async pipe` en Angular?",
+                options: ["Un pipe para convertir promesas en observables", "Un pipe que permite suscribirse a un observable directamente en la vista", "Un pipe para formatear fechas"],
+                answer: 1
+            },
+            {
+                question: "¿Qué es el `FormBuilder` en Angular?",
+                options: ["Un módulo para manejar archivos", "Una clase para crear formularios de manera programática", "Un componente para manejar eventos"],
+                answer: 1
+            },
+            {
+                question: "¿Qué es el `ngContent` en Angular?",
+                options: ["Un componente que muestra contenido dinámico", "Una directiva para proyectar contenido en componentes hijos", "Un servicio para manejar eventos del usuario"],
+                answer: 1
+            },
+            {
+                question: "¿Qué es el `ng-template` en Angular?",
+                options: ["Un componente que muestra datos", "Un contenedor para definir vistas que se pueden reutilizar", "Una directiva para manejar eventos del usuario"],
+                answer: 1
+            },
+            {
+                question: "¿Qué es una directiva en Angular?",
+                options: ["Una clase que puede modificar el comportamiento del DOM", "Una clase que define la estructura de una aplicación", "Un componente reutilizable"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es el `router` en Angular?",
+                options: ["Un servicio para manejar peticiones HTTP", "Un sistema para gestionar la navegación entre componentes", "Un componente para mostrar listas"],
+                answer: 1
+            },
+            {
+                question: "¿Qué es un `pipe` en Angular?",
+                options: ["Una función que transforma datos en las vistas", "Un componente de UI", "Un tipo de servicio"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es el `HttpClient` en Angular?",
+                options: ["Un servicio para manejar peticiones HTTP", "Un módulo para manejar rutas", "Una clase para manejar formularios"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es un `Observable` en Angular?",
+                options: ["Un tipo de componente", "Un patrón de programación asíncrona", "Un tipo de servicio"],
+                answer: 1
+            },
+            {
+                question: "¿Qué hace el decorador `@NgModule`?",
+                options: ["Define un módulo en Angular", "Define un componente", "Define una directiva"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es el `ChangeDetection` en Angular?",
+                options: ["Un sistema para detectar cambios en el modelo de datos", "Un sistema para manejar eventos", "Un sistema para mostrar datos en la vista"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es el `ngZone` en Angular?",
+                options: ["Un servicio para manejar cambios de estado", "Una clase para manejar formularios", "Una clase para gestionar la zona de ejecución asíncrona"],
+                answer: 2
+            },
+            {
+                question: "¿Qué es el `ReactiveFormsModule`?",
+                options: ["Un módulo para manejar formularios reactivos", "Un módulo para manejar peticiones HTTP", "Un módulo para manejar la navegación"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es un `Guard` en Angular?",
+                options: ["Una clase que protege rutas", "Un componente que maneja formularios", "Un módulo que agrupa componentes"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es un `Service` en Angular?",
+                options: ["Una clase que proporciona funcionalidad a múltiples componentes", "Una clase que define un componente", "Una clase que maneja la vista"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es el `ng-template` en Angular?",
+                options: ["Un componente que muestra datos", "Un contenedor para definir vistas que se pueden reutilizar", "Una directiva para manejar eventos del usuario"],
+                answer: 1
+            },
+        ];
+
+        // Función para mezclar preguntas y seleccionar 10 aleatorias
+        function getRandomQuestions() {
+            const shuffled = questions.sort(() => 0.5 - Math.random());
+            return shuffled.slice(0, 10);
+        }
+
+        // Función para mostrar preguntas en el formulario
+        function displayQuestions() {
+            const quizForm = document.getElementById('quizForm');
+            const selectedQuestions = getRandomQuestions();
+
+            selectedQuestions.forEach((q, index) => {
+                const questionDiv = document.createElement('div');
+                questionDiv.classList.add('question');
+                questionDiv.innerHTML = `<strong>${index + 1}. ${q.question}</strong>`;
+                
+                const optionsDiv = document.createElement('div');
+                optionsDiv.classList.add('options');
+                q.options.forEach((option, i) => {
+                    optionsDiv.innerHTML += `
+                        <div class="option">
+                            <input type="radio" name="q${index}" value="${i}"> ${option}
+                        </div>`;
+                });
+
+                questionDiv.appendChild(optionsDiv);
+                quizForm.appendChild(questionDiv);
+            });
+        }
+
+        // Función para enviar el cuestionario y calcular el resultado
+        function submitQuiz() {
+            const selectedQuestions = getRandomQuestions();
+            let score = 0;
+
+            selectedQuestions.forEach((q, index) => {
+                const userAnswer = document.querySelector(`input[name="q${index}"]:checked`);
+                if (userAnswer && parseInt(userAnswer.value) === q.answer) {
+                    score++;
+                }
+            });
+
+            alert(`Tu puntaje es: ${score} de ${selectedQuestions.length}`);
+        }
+
+        // Mostrar preguntas al cargar la página
+        window.onload = displayQuestions;
+    </script>
+    </div>
+
+
+    <br>
+<br><br>
+<br>
+
+
+<footer>
+    <p>&copy; 2024 Fernando Leon Medina - Todos los derechos reservados</p>
+</footer>
+</body>
+</html>

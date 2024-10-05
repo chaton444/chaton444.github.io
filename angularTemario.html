@@ -1,0 +1,443 @@
+    <!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <title>Preguntas y Respuestas de Java y Angular</title>
+  <style>
+    body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            background-color: #e9f5ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 5px solid #ff0095;
+            transition: background-color 0.3s;
+        }
+
+        .question:hover {
+            background-color: #ffd0e8;
+        }
+
+        .answer {
+            margin-left: 20px;
+            color: #555;
+            background: #f7f7f7;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .answer code {
+            background: #e8e8e8;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 25px;
+            text-decoration: none;
+           
+        }
+        nav a:hover {
+            background-color: #e4ebe9;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 8px 0;
+            background-color: #000000;
+            color: white;
+            width: 100%;
+            bottom: 0;
+        }
+
+  </style>
+</head>
+
+<body>
+ 
+  <header>
+    <h1 ><i style="color: #ff0606;" onmouseover="this.style.color='#44c8f0';" onmouseout="this.style.color='#0659ff';"  class="fas fa-code"></i>Angular Section <i class="fab fa-angular"></i></h1>
+</header>
+
+<nav >
+  <a style="color: #e36060;" onmouseover="this.style.color='#ff8c00';" onmouseout="this.style.color='#e36060';" href="javaTemario.html">
+     Temario Java <i class="fab fa-java"></i>
+</a>
+<a style="color: #e36060;" onmouseover="this.style.color='#ff8c00';" onmouseout="this.style.color='#e36060';" href="cuestionario_java.html">
+  <i class="fas fa-check-circle"></i>  Java Test  
+</a>
+<a style="color: #b3ddb9;" onmouseover="this.style.color='#07cb00';" onmouseout="this.style.color='#b3ddb9';" href="temarioSpringBoot.html">
+Temario Spring Boot <i class="fas fa-leaf"></i>
+</a>
+<a style="color: #b3ddb9;" onmouseover="this.style.color='#07cb00';" onmouseout="this.style.color='#b3ddb9';" href="cuestionarioSpringBoot.html">
+    <i class="fas fa-check-circle"></i> Spring Boot Test
+</a>
+<a style="color: #f3f3f3;" onmouseover="this.style.color='#0bc1fe';" onmouseout="this.style.color='#f3f3f3';" href="index.html">
+    <i class="fas fa-home"></i> 
+</a>
+<a style="color: #ddb3cc;" onmouseover="this.style.color='#fe0ba1';" onmouseout="this.style.color='#ddb3cc';" href="angularTemario.html">
+    <i class="fab fa-angular"></i> Temario Angular
+</a>
+<a style="color: #ddb3cc;" onmouseover="this.style.color='#fe0ba1';" onmouseout="this.style.color='#ddb3cc';" href="cuestionario_angular.html">
+  <i class="fas fa-check-circle"></i></i> Angular Test
+</a>
+<a style="color: #ddb3cc;" onmouseover="this.style.color='#fe0ba1';" onmouseout="this.style.color='#ddb3cc';" href="cuestionario_mix_Ang_Jav.html">
+    <i class="fas fa-check-circle"></i> Java and Angular Test
+</a>
+<a style="color: #b3cddd;" onmouseover="this.style.color='#bd0bfe';" onmouseout="this.style.color='#b3cddd';" href="https://github.com/chaton444">
+    <i class="fab fa-github"></i> GitHub
+</a>  
+
+</nav>
+
+  <h1 style="font-size: 3em; background: linear-gradient(35deg, rgb(253, 4, 187), #4ce8be); -webkit-background-clip:text; color: transparent;">Temario Angular</h1>
+  <div class="container">
+    <div class="question">¿Qué es Angular y qué diferencias tiene con React?</div>
+    <div class="answer">Angular es un framework para construir aplicaciones web en el lado del cliente, desarrollado por
+      Google. Proporciona una arquitectura basada en componentes, soporte para TypeScript y una amplia variedad de
+      herramientas y bibliotecas integradas. Por otro lado, React es una biblioteca para construir interfaces de
+      usuario, creada por Facebook, que se centra en la creación de componentes reutilizables. La principal diferencia
+      es que Angular es un framework completo que incluye muchas características listas para usar, mientras que React se
+      enfoca más en la vista y requiere bibliotecas adicionales para funcionalidades como el enrutamiento y la gestión
+      del estado.</div>
+
+    <div class="question">¿Qué son las promesas y cómo se usan en JavaScript?</div>
+    <div class="answer">Las promesas son un objeto que representa la eventual finalización (o falla) de una operación
+      asíncrona y su valor resultante. Se utilizan en JavaScript para manejar operaciones asíncronas, como solicitudes
+      de red. Se crean con `new Promise()` y se utilizan métodos como `then()` y `catch()` para manejar el resultado o
+      el error. Por ejemplo:
+      <pre><code>const miPromesa = new Promise((resolve, reject) =&gt; {
+            // lógica asíncrona
+            if (todoBien) {
+                resolve('Éxito');
+            } else {
+                reject('Error');
+            }
+        });
+
+        miPromesa.then(resultado =&gt; {
+            console.log(resultado);
+        }).catch(error =&gt; {
+            console.log(error);
+        });
+        </code></pre>
+    </div>
+
+    <div class="question">¿Qué es una API REST y cómo funciona?</div>
+    <div class="answer">Una API REST (Representational State Transfer) es un estilo arquitectónico para diseñar
+      servicios de red. Utiliza HTTP para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) mediante verbos
+      HTTP (POST, GET, PUT, DELETE). Las APIs REST se centran en recursos, que son representaciones de datos, y pueden
+      ser accedidos a través de URLs. La comunicación se realiza generalmente en formato JSON o XML. Las API REST son
+      escalables y se utilizan comúnmente para desarrollar aplicaciones web y móviles.</div>
+
+    <div class="question">¿Cómo manejar el estado en Angular?</div>
+    <div class="answer">En Angular, el estado de la aplicación puede manejarse de varias maneras, dependiendo de la
+      complejidad de la aplicación. Para aplicaciones pequeñas, se puede utilizar el `@Input()` y `@Output()` para la
+      comunicación entre componentes. Para aplicaciones más grandes, se pueden utilizar bibliotecas como NgRx o Akita,
+      que implementan el patrón de gestión de estado basado en Redux, permitiendo manejar el estado global de la
+      aplicación de manera más eficiente y predecible.</div>
+
+    <div class="question">¿Cómo se comunican los componentes entre sí en Angular?</div>
+    <div class="answer">Los componentes en Angular pueden comunicarse entre sí de varias maneras:
+      <ul>
+        <li>Usando <strong>Input</strong> y <strong>Output</strong> decorators para pasar datos y eventos entre
+          componentes padre e hijo.</li>
+        <li>Utilizando un servicio compartido para mantener el estado y la lógica de negocio, permitiendo que varios
+          componentes se suscriban a los cambios.</li>
+        <li>Usando el sistema de inyección de dependencias para proporcionar instancias de servicios a los componentes
+          que los necesitan.</li>
+      </ul>
+    </div>
+
+    <div class="question">¿Qué es un componente en Angular?</div>
+    <div class="answer">Un componente en Angular es una pieza fundamental de la arquitectura del framework. Cada
+      componente encapsula una parte de la interfaz de usuario y la lógica asociada, y se compone de tres partes
+      principales: un archivo de TypeScript que define la clase del componente, un archivo HTML que define la vista del
+      componente y un archivo CSS que define el estilo del componente. Los componentes pueden ser reutilizados y
+      anidados, lo que permite crear interfaces de usuario complejas y estructuradas.</div>
+
+    <div class="question">Diferencia entre un módulo y un componente en Angular.</div>
+    <div class="answer">Un módulo en Angular es un contenedor para un grupo de componentes, directivas, pipes y
+      servicios que están relacionados. Los módulos permiten organizar la aplicación en partes más manejables. Por otro
+      lado, un componente es una unidad específica que se encarga de una parte de la interfaz de usuario y de la lógica
+      relacionada. Un módulo puede contener múltiples componentes, pero un componente no puede existir sin estar dentro
+      de un módulo.</div>
+
+    <div class="question">¿Cómo se utiliza el enrutamiento en Angular?</div>
+    <div class="answer">El enrutamiento en Angular se utiliza para navegar entre diferentes vistas de la aplicación. Se
+      configura en el módulo principal de la aplicación usando el `RouterModule`, donde defines rutas que asocian URL
+      con componentes. Al utilizar el componente `<router-outlet>`, Angular puede cargar el componente correspondiente a
+        la ruta activa. También puedes usar servicios como `ActivatedRoute` para acceder a parámetros de ruta y realizar
+        acciones basadas en la ruta actual.</div>
+    <div class="question">¿Qué se utiliza para poder hacer uso de métodos de interfaces?</div>
+    <div class="answer">Para utilizar métodos de interfaces, una clase debe implementar la interfaz utilizando la
+      palabra clave <code>implements</code>. Esto obliga a la clase a proporcionar implementaciones concretas para todos
+      los métodos abstractos definidos en la interfaz. Además, se pueden utilizar clases abstractas para proporcionar
+      una implementación parcial de la interfaz si es necesario.</div>
+
+    <div class="question">¿Qué patrón de diseño conoces? Da ejemplos.</div>
+    <div class="answer">Conozco varios patrones de diseño, algunos ejemplos incluyen:
+      <ul>
+        <li><strong>Decorator</strong>: permite agregar nuevas funcionalidades a un objeto de manera dinámica. Por
+          ejemplo, puedes tener un objeto <code>Café</code> y decorarlo con diferentes opciones como <code>Leche</code>
+          o <code>Azúcar</code>.</li>
+        <li><strong>Strategy</strong>: define una familia de algoritmos y permite que un objeto elija uno de ellos en
+          tiempo de ejecución. Por ejemplo, una clase <code>Contexto</code> que puede utilizar diferentes estrategias de
+          ordenación, como <code>OrdenarPorNombre</code> o <code>OrdenarPorFecha</code>.</li>
+      </ul>
+    </div>
+
+    <div class="question">¿Qué es la programación funcional? Lambdas y Streams.</div>
+    <div class="answer">La programación funcional es un paradigma que enfatiza el uso de funciones como ciudadanos de
+      primera clase y evita el estado mutable. En Java, las expresiones lambda permiten crear funciones anónimas que
+      pueden ser pasadas como argumentos. Los Streams son una herramienta poderosa para trabajar con colecciones de
+      datos, permitiendo operaciones como filtrado, mapeo y reducción de manera más declarativa y legible. Por ejemplo,
+      puedes usar un Stream para filtrar una lista de números y obtener solo aquellos que son pares.</div>
+
+    <div class="question">¿Diferencia entre monolito y microservicio?</div>
+    <div class="answer">Un monolito es una arquitectura en la que toda la funcionalidad de la aplicación está contenida
+      en un solo bloque de código. Esto puede hacer que sea más fácil de desarrollar y desplegar, pero puede volverse
+      complicado a medida que la aplicación crece. Los microservicios, por otro lado, dividen la funcionalidad en
+      servicios independientes que se comunican entre sí, permitiendo un desarrollo más ágil y una escalabilidad más
+      fácil. Esta arquitectura es más adecuada para aplicaciones grandes y complejas.</div>
+
+    <div class="question">¿Cuál fue el proyecto más desafiante que tuviste?</div>
+    <div class="answer">El proyecto más desafiante que tuve fue el desarrollo de una aplicación de gestión de inventario
+      para una pequeña empresa. El desafío principal fue integrar múltiples fuentes de datos y garantizar la
+      sincronización en tiempo real. Utilicé tecnologías como Spring Boot para el backend y Angular para el frontend, y
+      aprendí mucho sobre la gestión de dependencias y la optimización del rendimiento en el proceso.</div>
+
+    <div class="question">¿Cuál fue tu proyecto de mayor relevancia? ¿Por qué? ¿Qué tecnologías usaste?</div>
+    <div class="answer">Mi proyecto de mayor relevancia fue una aplicación de comercio electrónico que desarrollé como
+      parte de mi experiencia laboral. Este proyecto fue significativo porque implicó la colaboración con un equipo
+      multidisciplinario y el aprendizaje de nuevas tecnologías como React para el frontend y Node.js para el backend.
+      Aprendí sobre la importancia de la comunicación efectiva y la planificación en el desarrollo ágil.</div>
+
+    <div class="question">¿Te sientes preparado para este puesto?</div>
+    <div class="answer">Sí, me siento preparado para este puesto. He adquirido una sólida comprensión de los conceptos y
+      tecnologías relevantes, así como experiencia práctica en proyectos que me han permitido desarrollar habilidades
+      técnicas y de colaboración. Estoy motivado para seguir aprendiendo y crecer en este rol.</div>
+
+    <div class="question">¿Qué te llevó a presentarte a este puesto?</div>
+    <div class="answer">Me presenté a este puesto porque estoy emocionado por la oportunidad de trabajar en un entorno
+      innovador y desafiante. La misión de la empresa resuena conmigo y creo que mi experiencia y habilidades se alinean
+      bien con las necesidades del equipo. Estoy ansioso por contribuir y aprender de mis colegas.</div>
+
+    <div class="question">¿Cuál es tu background?</div>
+    <div class="answer">Tengo un background en desarrollo de software, con experiencia en lenguajes como Java y
+      JavaScript. He trabajado en varios proyectos, tanto individuales como en equipo, lo que me ha permitido
+      desarrollar mis habilidades técnicas y de colaboración. Estoy continuamente aprendiendo y adaptándome a nuevas
+      tecnologías para mejorar mi capacidad de contribuir efectivamente a los proyectos.</div>
+
+    <h1>Angular</h1>
+
+    <div class="question">¿Trabajaste solo con Angular? ¿Desde qué versión?</div>
+    <div class="answer">He trabajado principalmente con Angular desde la versión 8, pero he actualizado mis
+      conocimientos para incluir las versiones más recientes. Angular me ha permitido desarrollar aplicaciones web de
+      una manera estructurada y eficiente, utilizando componentes y servicios para mantener un código limpio y
+      mantenible.</div>
+
+    <div class="question">¿Conoces las diferencias entre las versiones de Angular?</div>
+    <div class="answer">Sí, conozco varias diferencias entre las versiones de Angular. Por ejemplo, Angular 9 introdujo
+      el Ivy renderer, mejorando el rendimiento y la capacidad de depuración. Angular 10 trajo mejoras en la CLI y
+      soporte para nuevos tipos de verificación. Con cada versión, se han mejorado las características y se han agregado
+      nuevas herramientas que facilitan el desarrollo y mejoran la experiencia del desarrollador.</div>
+
+    <div class="question">¿Qué es TypeScript y qué ventajas proporciona al desarrollador con respecto a utilizar
+      solamente JavaScript?</div>
+    <div class="answer">TypeScript es un superset de JavaScript que añade tipos estáticos y otros conceptos de
+      programación orientada a objetos. Las ventajas de TypeScript incluyen la detección temprana de errores a través de
+      la tipificación, lo que reduce la cantidad de errores en tiempo de ejecución. También mejora la legibilidad del
+      código, facilita la refactorización y proporciona autocompletado en editores, lo que acelera el desarrollo y
+      mejora la calidad del código.</div>
+
+    <div class="question">En cuanto a mantenimiento de código... ¿qué ventajas tiene?</div>
+    <div class="answer">El mantenimiento de código es más sencillo con TypeScript debido a su tipificación estática, lo
+      que permite identificar errores antes de que el código se ejecute. Además, la documentación generada a partir de
+      los tipos mejora la comprensión del código por parte de otros desarrolladores. Esto hace que el proceso de
+      actualización y mantenimiento de proyectos sea más eficiente y menos propenso a errores.</div>
+
+    <div class="question">¿Podés definir el concepto de "Two Way Data Binding"?</div>
+    <div class="answer">El "Two Way Data Binding" es un patrón de diseño en Angular que permite que los datos fluyan en
+      ambas direcciones entre el modelo y la vista. Cuando el modelo cambia, la vista se actualiza automáticamente, y
+      viceversa. Esto se logra utilizando el <code>[(ngModel)]</code> en Angular, lo que simplifica la gestión del
+      estado de los datos y mejora la interactividad de las aplicaciones.</div>
+
+    <div class="question">¿Qué es un componente en Angular? ¿Qué se puede hacer con ellos?</div>
+    <div class="answer">Un componente en Angular es una unidad básica de la aplicación que encapsula la lógica de
+      presentación y el comportamiento. Cada componente tiene su propio template, estilos y lógica de negocio. Se pueden
+      utilizar para crear elementos reutilizables en la interfaz de usuario, como botones, formularios o tablas. Además,
+      los componentes pueden comunicarse entre sí mediante <code>@Input()</code> y <code>@Output()</code>, permitiendo
+      la creación de aplicaciones interactivas y modulares.</div>
+
+    <div class="question">¿Puedo tener un conjunto de componentes dentro de otro componente? Dame ejemplos.</div>
+    <div class="answer">Sí, se pueden tener conjuntos de componentes dentro de otros componentes, lo que se conoce como
+      "composición de componentes". Por ejemplo, puedes tener un componente <code>AppComponent</code> que contenga un
+      componente <code>Navbar</code>, un componente <code>Footer</code> y varios componentes de contenido, como
+      <code>ProductList</code> y <code>ProductDetail</code>. Esta estructura modular permite una mejor organización y
+      reutilización de código.</div>
+
+    <div class="question">¿Cómo creás un componente en Angular? ¿De qué archivos generalmente se compone?</div>
+    <div class="answer">Para crear un componente en Angular, se utiliza la CLI de Angular con el comando
+      <code>ng generate component nombre-componente</code>. Esto generará varios archivos, incluyendo:
+      <ul>
+        <li><code>nombre-componente.component.ts</code>: archivo TypeScript que contiene la lógica del componente.</li>
+        <li><code>nombre-componente.component.html</code>: archivo HTML que define la plantilla del componente.</li>
+        <li><code>nombre-componente.component.css</code>: archivo CSS que define los estilos del componente.</li>
+        <li><code>nombre-componente.component.spec.ts</code>: archivo de prueba para el componente.</li>
+      </ul>
+    </div>
+
+    <div class="question">¿Qué es un servicio en Angular? ¿Qué papel cumple la inyección de dependencias con los
+      servicios?</div>
+    <div class="answer">Un servicio en Angular es una clase que proporciona una funcionalidad específica, como la
+      gestión de datos o la lógica de negocio, y puede ser compartida entre diferentes componentes. La inyección de
+      dependencias permite a los componentes solicitar servicios sin tener que crearlos manualmente, lo que promueve una
+      arquitectura más limpia y escalable. Esto se logra mediante el uso del decorador <code>@Injectable()</code> en la
+      clase de servicio y configurando el módulo para proporcionarlo.</div>
+
+    <div class="question">¿Qué es una directiva en Angular? ¿Cuáles son las diferentes categorías de directivas?</div>
+    <div class="answer">Una directiva en Angular es una clase que permite manipular el DOM o modificar el comportamiento
+      de un componente. Hay tres categorías principales de directivas:
+      <ul>
+        <li><strong>Directivas de componentes</strong>: Son directivas que tienen una plantilla asociada y controlan un
+          área del DOM (ejemplo: un componente personalizado).</li>
+        <li><strong>Directivas estructurales</strong>: Cambian la estructura del DOM, como <code>*ngIf</code> o
+          <code>*ngFor</code>, que agregan o eliminan elementos.</li>
+        <li><strong>Directivas de atributos</strong>: Modifican el comportamiento o apariencia de un elemento existente
+          (ejemplo: <code>ngClass</code> o <code>ngStyle</code>).</li>
+      </ul>
+    </div>
+
+    <div class="question">¿Qué son las rutas en Angular? ¿Para qué sirven? ¿Cómo se utilizan?</div>
+    <div class="answer">Las rutas en Angular son una forma de manejar la navegación dentro de una aplicación. Permiten
+      que diferentes componentes se muestren en función de la URL actual. Las rutas se definen en el módulo de
+      enrutamiento de Angular y se utilizan en combinación con el <code>RouterModule</code>. Para definir una ruta, se
+      crea un objeto con la propiedad <code>path</code> y el componente asociado. Se pueden configurar rutas hijas,
+      rutas protegidas y rutas dinámicas para una mejor experiencia de usuario.</div>
+
+    <div class="question">¿Cómo gestionas el estado de tu aplicación? ¿Usas alguna librería?</div>
+    <div class="answer">Para gestionar el estado de la aplicación, utilizo <code>NgRx</code>, que es una biblioteca de
+      gestión del estado basada en el patrón Redux. NgRx proporciona una forma estructurada de manejar el estado global
+      de la aplicación, facilitando la administración de datos complejos y la comunicación entre componentes. A través
+      de acciones, reducers y efectos, puedo mantener el estado predecible y hacer un seguimiento de los cambios de
+      manera eficiente.</div>
+
+    <div class="question">¿Qué es RxJS y cómo se usa en Angular?</div>
+    <div class="answer">RxJS es una biblioteca para la programación reactiva que permite trabajar con flujos de datos
+      asíncronos utilizando observables. En Angular, se utiliza para manejar eventos, llamadas HTTP y cualquier
+      operación asíncrona. Con RxJS, puedo crear cadenas de operadores que transforman, filtran y combinan flujos de
+      datos de manera declarativa, lo que simplifica la gestión de la lógica asíncrona en la aplicación.</div>
+
+    <div class="question">¿Qué son las promesas y en qué se diferencian de los observables?</div>
+    <div class="answer">Las promesas son objetos que representan el resultado de una operación asíncrona, resolviéndose
+      en un único valor o error. Por otro lado, los observables representan una colección de valores que pueden emitirse
+      de manera asíncrona en el tiempo. A diferencia de las promesas, los observables son perezosos y pueden cancelar
+      suscripciones, lo que los hace más versátiles en situaciones donde se espera múltiples eventos o valores.</div>
+    <div class="question">¿Cuál es la diferencia entre un componente y un módulo en Angular?</div>
+    <div class="answer">Un componente es una parte de la interfaz de usuario que define un conjunto de propiedades y
+      comportamientos, así como su plantilla HTML. Un módulo, por otro lado, es un contenedor para agrupar componentes,
+      servicios y otras funcionalidades relacionadas. Los módulos ayudan a organizar la aplicación y permiten la carga
+      diferida de componentes.</div>
+
+    <div class="question">¿Qué es el ciclo de vida de un componente en Angular?</div>
+    <div class="answer">El ciclo de vida de un componente en Angular se refiere a la serie de eventos que ocurren desde
+      la creación hasta la destrucción del componente. Incluye varias fases, como <code>ngOnInit</code>
+      (inicialización), <code>ngOnChanges</code> (cambio de propiedades de entrada), <code>ngOnDestroy</code>
+      (limpieza), entre otros. Estos métodos se pueden implementar para manejar lógica específica en cada fase del ciclo
+      de vida.</div>
+
+    <div class="question">¿Qué es un servicio en Angular y cómo se crea?</div>
+    <div class="answer">Un servicio en Angular es una clase que encapsula lógica de negocio o funcionalidades que se
+      pueden compartir entre diferentes componentes. Se crea utilizando el decorador <code>@Injectable()</code> y se
+      proporciona en un módulo o componente. Esto permite que los componentes inyecten el servicio y accedan a sus
+      métodos y propiedades.</div>
+
+    <div class="question">¿Qué es la inyección de dependencias en Angular?</div>
+    <div class="answer">La inyección de dependencias en Angular es un patrón de diseño que permite que un componente o
+      servicio reciba sus dependencias desde el exterior, en lugar de crearlas internamente. Esto mejora la modularidad
+      y facilita las pruebas. Se logra a través de decoradores y configuraciones en los módulos de Angular.</div>
+
+    <div class="question">¿Cómo se implementa la internacionalización (i18n) en Angular?</div>
+    <div class="answer">La internacionalización en Angular se puede implementar utilizando el módulo <code>i18n</code>.
+      Esto implica marcar las cadenas de texto en las plantillas y generar archivos de traducción para diferentes
+      idiomas. Angular proporciona herramientas para extraer cadenas, traducirlas y generar un paquete de construcción
+      para diferentes locales.</div>
+
+    <div class="question">¿Qué son los formularios reactivos en Angular y cómo se diferencian de los formularios basados
+      en plantillas?</div>
+    <div class="answer">Los formularios reactivos en Angular son una forma de construir formularios que permite una
+      mayor flexibilidad y control sobre el estado del formulario. Se definen en el código en lugar de en la plantilla,
+      lo que permite el uso de validaciones dinámicas y la reacción a cambios en el estado del formulario. En
+      comparación, los formularios basados en plantillas se construyen principalmente en el HTML, utilizando la
+      directiva <code>ngModel</code> para enlazar datos y manejar la validación.</div>
+
+    <div class="question">¿Cómo manejas errores en las solicitudes HTTP en Angular?</div>
+    <div class="answer">Los errores en las solicitudes HTTP en Angular se pueden manejar utilizando el operador
+      <code>catchError</code> de RxJS en el servicio que realiza la llamada. Esto permite interceptar errores y retornar
+      un Observable con un valor predeterminado o lanzar un error personalizado que se puede manejar en el componente.
+    </div>
+
+
+    
+
+  </div>
+<br>
+<br><br>
+<br>
+
+
+<footer>
+    <p>&copy; 2024 Fernando Leon Medina - Todos los derechos reservados</p>
+</footer>
+
+</body>
+
+</html>
