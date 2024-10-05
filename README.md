@@ -1,4 +1,4 @@
-# README para la Plataforma de Prácticar para Entrevista Técnica
+# Plataforma de Prácticar para Entrevista Técnica
 
 Bienvenido a la **Plataforma de  Prácticar para Entrevista Técnica**, un sitio web diseñado para ayudarte a mejorar tus habilidades en **Java**, **Spring Boot** y **Angular**. Este proyecto tiene como objetivo preparar a los desarrolladores para entrevistas técnicas a través de cuestionarios y temarios que cubren una amplia gama de temas.
 
@@ -39,7 +39,9 @@ El menú de navegación incluye enlaces a las siguientes secciones:
 ## Capturas de Pantalla
 
 ![Imagen 1](Fotos/1.PNG)
+# Informacion con Preguntas Frecuentes
 ![Imagen 2](Fotos/2.PNG)
+#Test
 ![Imagen 3](Fotos/4.PNG)
 
 
