@@ -38,7 +38,9 @@ El menú de navegación incluye enlaces a las siguientes secciones:
 
 ## Capturas de Pantalla
 
-
+![Imagen 1](Fotos/1.PNG)
+![Imagen 2](Fotos/2.PNG)
+![Imagen 3](Fotos/3.PNG)
 
 
 
