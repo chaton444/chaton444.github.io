@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Página Principal</title>
+    <style>
+    body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            background-color: #e9f5ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 5px solid #007bff;
+            transition: background-color 0.3s;
+        }
+
+        .question:hover {
+            background-color: #d0ebff;
+        }
+
+        .answer {
+            margin-left: 20px;
+            color: #555;
+            background: #f7f7f7;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .answer code {
+            background: #e8e8e8;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 25px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 4px 0;
+            background-color: #000000;
+            color: white;    
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header >
+        <h1 ><i style="color: #0659ff;" onmouseover="this.style.color='#44c8f0';" onmouseout="this.style.color='#0659ff';"  class="fas fa-code"></i>Bienvenido</h1>
+    </header>
+    
+    <nav>
+        <a style="color: #e36060;" onmouseover="this.style.color='#ff8c00';" onmouseout="this.style.color='#e36060';" href="javaTemario.html">
+            Temario Java <i class="fab fa-java"></i>
+       </a>
+       <a style="color: #e36060;" onmouseover="this.style.color='#ff8c00';" onmouseout="this.style.color='#e36060';" href="cuestionario_java.html">
+         <i class="fas fa-check-circle"></i>  Java Test  
+       </a>
+       <a style="color: #b3ddb9;" onmouseover="this.style.color='#07cb00';" onmouseout="this.style.color='#b3ddb9';" href="temarioSpringBoot.html">
+           Temario Spring Boot <i class="fas fa-leaf"></i>
+       </a>
+       <a style="color: #b3ddb9;" onmouseover="this.style.color='#07cb00';" onmouseout="this.style.color='#b3ddb9';" href="cuestionarioSpringBoot.html">
+           <i class="fas fa-check-circle"></i> Spring Boot Test 
+       </a>
+       <a style="color: #f3f3f3;" onmouseover="this.style.color='#0bc1fe';" onmouseout="this.style.color='#f3f3f3';" href="index.html">
+           <i class="fas fa-home"></i> 
+       </a>
+       <a style="color: #ddb3cc;" onmouseover="this.style.color='#fe0ba1';" onmouseout="this.style.color='#ddb3cc';" href="angularTemario.html">
+           <i class="fab fa-angular"></i> Temario Angular
+       </a>
+       <a style="color: #ddb3cc;" onmouseover="this.style.color='#fe0ba1';" onmouseout="this.style.color='#ddb3cc';" href="cuestionario_angular.html">
+         <i class="fas fa-check-circle"></i></i> Angular Test
+       </a>
+       <a style="color: #ddb3cc;" onmouseover="this.style.color='#fe0ba1';" onmouseout="this.style.color='#ddb3cc';" href="cuestionario_mix_Ang_Jav.html">
+           <i class="fas fa-check-circle"></i> Java and Angular Test
+       </a>
+       <a style="color: #b3cddd;" onmouseover="this.style.color='#bd0bfe';" onmouseout="this.style.color='#b3cddd';" href="https://github.com/chaton444">
+           <i class="fab fa-github"></i> GitHub
+       </a>  
+    
+    </nav>
+    <h1 style="font-size: 3em; background: linear-gradient(35deg, rgb(4, 124, 253), #4ce8be); -webkit-background-clip:text; color: transparent;">Acerca de la Pagina </h1>
+    <div class="container">
+        
+        <p>Aquí encontrarás los cuestionarios de Java y Angular, así como el temario de tus estudios.</p>
+    
+        <h3>¡Bienvenido a nuestra plataforma de práctica técnica!</h3>
+        <p>En el mundo del desarrollo de software, estar preparado para las entrevistas es crucial. Nuestro sitio web ha sido creado específicamente para ayudarte a practicar y perfeccionar tus habilidades en <strong>Java</strong>, <strong>Spring Boot</strong> y <strong>Angular</strong>.</p>
+        
+        <h3>¿Por qué es importante prepararse para las entrevistas técnicas?</h3>
+        <p>Las entrevistas técnicas son un paso fundamental en el proceso de contratación para cualquier desarrollador. No solo se evalúan tus conocimientos técnicos, sino también tu capacidad para resolver problemas y tu adaptabilidad ante nuevos desafíos. Con la creciente demanda de desarrolladores capacitados, estar bien preparado te permitirá destacar entre otros candidatos y aumentar tus posibilidades de conseguir el puesto deseado.</p>
+    
+        <h3>¿Qué encontrarás aquí?</h3>
+        <ul>
+            <li>
+                <strong>Cuestionarios de Java:</strong> Practica con preguntas que abarcan desde los fundamentos de Java hasta conceptos avanzados como POO, programación funcional, y más. Java es uno de los lenguajes más populares y versátiles, utilizado en una variedad de aplicaciones, desde el desarrollo web hasta aplicaciones móviles.
+                <br>
+                <img src="https://miro.medium.com/v2/resize:fit:1358/1*8jNlxdyAGCRRapXOfujYpg.jpeg" alt="Java Logo" width="400" />
+            </li>
+            <li>
+                <strong>Cuestionarios de Spring Boot:</strong> Spring Boot es un marco de trabajo que simplifica el desarrollo de aplicaciones Java. Aquí encontrarás preguntas sobre sus componentes críticos, anotaciones importantes, y cómo se diferencia de Spring. Aprender a utilizar Spring Boot te permitirá crear aplicaciones robustas y escalables de manera eficiente.
+                <br>
+                <img src="data:image/png;base64,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" alt="Spring Boot Logo" width="400" />
+            </li>
+            <li>
+                <strong>Cuestionarios de Angular:</strong> Angular es un marco de trabajo popular para el desarrollo de aplicaciones web. Con preguntas sobre componentes, servicios, y gestión del estado, podrás profundizar en el desarrollo frontend y aprender a crear aplicaciones dinámicas y eficientes.
+                <br>
+                <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular Logo" width="400" />
+            </li>
+        </ul>
+    
+        <h3>Cómo usar la plataforma</h3>
+        <p>Explora nuestros cuestionarios interactivos que incluyen preguntas de opción múltiple, respuestas cortas y escenarios prácticos. Cada cuestionario está diseñado para evaluar tus conocimientos y brindarte retroalimentación instantánea para que puedas identificar áreas de mejora. Simplemente selecciona la opción que más te interese del menú y comienza a practicar.</p>
+    
+        <h3>Prepárate para el éxito</h3>
+        <p>Recuerda, la práctica hace al maestro. No importa si eres un principiante que está comenzando en el mundo del desarrollo o un profesional experimentado que busca afianzar su conocimiento, nuestra plataforma está diseñada para ayudarte a alcanzar tus objetivos. ¡Comienza hoy y da el primer paso hacia tu éxito profesional!</p>
+    
+    </div>
+
+<br><br>
+<br><br>    
+    
+    <footer>
+        <p>&copy; 2024 Fernando Leon Medina - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

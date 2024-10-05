@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Preguntas y Respuestas de Java</title>
+  <style>
+    body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .question {
+            background-color: #e9f5ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 5px solid #007bff;
+            transition: background-color 0.3s;
+        }
+        .question:hover {
+            background-color: #d0ebff;
+        }
+        .answer {
+            margin-left: 20px;
+            color: #555;
+            background: #f7f7f7;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .answer code {
+            background: #e8e8e8;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            background-color: #ecd9d6;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 5px solid #f51e1e;
+            transition: background-color 0.3s;
+        }
+
+        .question:hover {
+            background-color: #f9bdbc;
+        }
+
+        .answer {
+            margin-left: 20px;
+            color: #555;
+            background: #f7f7f7;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .answer code {
+            background: #e8e8e8;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 25px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 8px 0;
+            background-color: #000000;
+            color: white;
+            width: 100%;
+            bottom: 0;
+        }
+  </style>
+</head>
+
+<body>
+    <header >
+        <h1 ><i style="color: #ff0606;" onmouseover="this.style.color='#44c8f0';" onmouseout="this.style.color='#0659ff';"  class="fas fa-code"></i>Java Section <i class="fab fa-java"></i></h1>
+    </header>
+    
+    <nav>
+        <a style="color: #e36060;" onmouseover="this.style.color='#ff8c00';" onmouseout="this.style.color='#e36060';" href="javaTemario.html">
+            Temario Java <i class="fab fa-java"></i>
+       </a>
+       <a style="color: #e36060;" onmouseover="this.style.color='#ff8c00';" onmouseout="this.style.color='#e36060';" href="cuestionario_java.html">
+         <i class="fas fa-check-circle"></i>  Java Test  
+       </a>
+       <a style="color: #b3ddb9;" onmouseover="this.style.color='#07cb00';" onmouseout="this.style.color='#b3ddb9';" href="temarioSpringBoot.html">
+           <i class="fab fa-java"></i> Temario Spring Boot
+       </a>
+       <a style="color: #b3ddb9;" onmouseover="this.style.color='#07cb00';" onmouseout="this.style.color='#b3ddb9';" href="cuestionarioSpringBoot.html">
+           Spring Boot Test <i class="fas fa-leaf"></i>
+       </a>
+       <a style="color: #f3f3f3;" onmouseover="this.style.color='#0bc1fe';" onmouseout="this.style.color='#f3f3f3';" href="index.html">
+           <i class="fas fa-home"></i> 
+       </a>
+       <a style="color: #ddb3cc;" onmouseover="this.style.color='#fe0ba1';" onmouseout="this.style.color='#ddb3cc';" href="angularTemario.html">
+           <i class="fab fa-angular"></i> Temario Angular
+       </a>
+       <a style="color: #ddb3cc;" onmouseover="this.style.color='#fe0ba1';" onmouseout="this.style.color='#ddb3cc';" href="cuestionario_angular.html">
+         <i class="fas fa-check-circle"></i></i> Angular Test
+       </a>
+       <a style="color: #ddb3cc;" onmouseover="this.style.color='#fe0ba1';" onmouseout="this.style.color='#ddb3cc';" href="cuestionario_mix_Ang_Jav.html">
+           <i class="fas fa-check-circle"></i> Java and Angular Test
+       </a>
+       <a style="color: #b3cddd;" onmouseover="this.style.color='#bd0bfe';" onmouseout="this.style.color='#b3cddd';" href="https://github.com/chaton444">
+           <i class="fab fa-github"></i> GitHub
+       </a>  
+    
+    </nav>
+
+    <h1 style="font-size: 3em; background: linear-gradient(35deg, rgb(253, 4, 4), #e8af4c); -webkit-background-clip:text; color: transparent;">Java para Preguntas Tecnicas</h1>
+    <div class="container">
+    
+        <div class="question">¿Qué es Java?</div>
+        <div class="answer">Java es un lenguaje de programación orientado a objetos que se utiliza para desarrollar aplicaciones multiplataforma. Fue diseñado para ser robusto, seguro y de alto rendimiento. 
+          <br><br>Ejemplo:
+          <pre><code>public class HolaMundo {
+        public static void main(String[] args) {
+            System.out.println("¡Hola Mundo!");
+        }
+    }</code></pre>
+        </div>
+    
+        <div class="question">¿Qué es una clase en Java?</div>
+        <div class="answer">Una clase en Java es una plantilla o molde a partir del cual se crean objetos. Define atributos (variables) y métodos (funciones) que los objetos creados a partir de la clase pueden usar.
+          <br><br>Ejemplo:
+          <pre><code>class Coche {
+        String color;
+    
+        void arrancar() {
+            System.out.println("El coche arranca");
+        }
+    }</code></pre>
+        </div>
+    
+        <div class="question">¿Qué es la herencia en Java?</div>
+        <div class="answer">La herencia en Java es un mecanismo que permite que una clase herede atributos y métodos de otra clase, permitiendo la reutilización de código. La clase que hereda es llamada subclase y la clase de la cual hereda es la superclase.
+          <br><br>Ejemplo:
+          <pre><code>class Vehiculo {
+        void mover() {
+            System.out.println("El vehículo se mueve");
+        }
+    }
+    
+    class Coche extends Vehiculo {
+    }</code></pre>
+        </div>
+    
+        <div class="question">¿Qué es una interfaz en Java?</div>
+        <div class="answer">Una interfaz en Java es un conjunto de métodos abstractos que una clase debe implementar si decide utilizar la interfaz. Las interfaces permiten definir contratos que las clases deben cumplir sin especificar cómo lo hacen.
+          <br><br>Ejemplo:
+          <pre><code>interface Volable {
+        void volar();
+    }
+    
+    class Pajaro implements Volable {
+        public void volar() {
+            System.out.println("El pájaro vuela");
+        }
+    }</code></pre>
+        </div>
+    
+        <div class="question">¿Qué es un constructor en Java?</div>
+        <div class="answer">Un constructor en Java es un método especial que se ejecuta al crear una instancia (objeto) de una clase. Se utiliza para inicializar los atributos de la clase.
+          <br><br>Ejemplo:
+          <pre><code>class Persona {
+        String nombre;
+    
+        Persona(String nombre) {
+            this.nombre = nombre;
+        }
+    }</code></pre>
+        </div>
+    
+        <div class="question">¿Qué significa 'JDK'?</div>
+        <div class="answer">JDK significa "Java Development Kit". Es un conjunto de herramientas que incluye el compilador, las bibliotecas y otras utilidades necesarias para desarrollar aplicaciones en Java.</div>
+    
+        <div class="question">¿Qué es el 'garbage collection' en Java?</div>
+        <div class="answer">El 'garbage collection' es un proceso automático en Java que se encarga de liberar memoria eliminando los objetos que ya no son utilizados por el programa, ayudando a evitar fugas de memoria.</div>
+    
+        <div class="question">¿Cuál de los siguientes no es un tipo de dato primitivo en Java?</div>
+        <div class="answer">"String" no es un tipo de dato primitivo en Java, sino una clase. Los tipos primitivos incluyen <code>int</code>, <code>boolean</code>, <code>char</code>, entre otros.</div>
+    
+        <div class="question">¿Qué es un paquete en Java?</div>
+        <div class="answer">Un paquete en Java es una forma de organizar las clases relacionadas en grupos. Facilita la organización y evita conflictos de nombres entre clases.
+          <br><br>Ejemplo:
+          <pre><code>package com.ejemplo.mipaquete;</code></pre>
+        </div>
+    
+        <div class="question">¿Qué hace el método 'main' en Java?</div>
+        <div class="answer">El método <code>main</code> es el punto de entrada para la ejecución de cualquier aplicación Java. Es donde comienza la ejecución del programa.
+          <br><br>Ejemplo:
+          <pre><code>public static void main(String[] args) {
+        System.out.println("Inicia el programa");
+    }</code></pre>
+        </div>
+    
+        <div class="question">¿Qué es un 'try-catch' en Java?</div>
+        <div class="answer">Un 'try-catch' es una estructura de control que se utiliza para manejar excepciones en Java. Permite intentar ejecutar un bloque de código y, si ocurre una excepción, manejarla adecuadamente en el bloque 'catch'.
+          <br><br>Ejemplo:
+          <pre><code>try {
+        int resultado = 10 / 0;
+    } catch (ArithmeticException e) {
+        System.out.println("Error: División por cero");
+    }</code></pre>
+        </div>
+    
+        <div class="question">¿Qué es una excepción en Java?</div>
+        <div class="answer">Una excepción en Java es un error que puede ocurrir durante la ejecución del programa, y puede ser manejado mediante estructuras de control como 'try-catch'. Las excepciones permiten que el programa continúe su ejecución en lugar de cerrarse abruptamente.
+          <br><br>Ejemplo:
+          <pre><code>throw new Exception("Ocurrió un error");</code></pre>
+        </div>
+    
+        <div class="question">¿Qué significa 'OOP'?</div>
+        <div class="answer">OOP significa "Orientación a Objetos". Es un paradigma de programación que utiliza "objetos" y sus interacciones para diseñar aplicaciones y programas. Las características principales de OOP incluyen encapsulamiento, herencia y polimorfismo.</div>
+    
+        <div class="question">¿Qué es una variable estática?</div>
+        <div class="answer">Una variable estática es una variable que pertenece a la clase en lugar de a una instancia específica. Esto significa que su valor es compartido por todas las instancias de la clase.
+          <br><br>Ejemplo:
+          <pre><code>class Contador {
+        static int conteo = 0;
+    }</code></pre>
+        </div>
+    
+        <div class="question">¿Qué hace el operador 'instanceof' en Java?</div>
+        <div class="answer">El operador 'instanceof' se utiliza para verificar si un objeto es una instancia de una clase específica o de una subclase.
+          <br><br>Ejemplo:
+          <pre><code>if (objeto instanceof Coche) {
+        System.out.println("Es un coche");
+    }</code></pre>
+        </div>
+    
+        <div class="question">¿Qué es el 'polimorfismo' en Java?</div>
+        <div class="answer">El polimorfismo en Java es la capacidad de un objeto de tomar muchas formas. Permite que una misma operación se realice de diferentes maneras dependiendo del objeto que la invoca.
+          <br><br>Ejemplo:
+          <pre><code>class Animal {
+        void hacerSonido() {
+            System.out.println("Sonido genérico");
+        }
+    }
+    
+    class Perro extends Animal {
+        void hacerSonido() {
+            System.out.println("Guau");
+        }
+    }</code></pre>
+        </div>
+    
+        <div class="question">¿Qué es un 'ArrayList' en Java?</div>
+        <div class="answer">Un 'ArrayList' en Java es una colección que puede cambiar de tamaño dinámicamente. Permite almacenar elementos de manera ordenada y proporciona métodos para manipular la lista, como agregar, eliminar y acceder a elementos.
+          <br><br>Ejemplo:
+          <pre><code>ArrayList&lt;String&gt; lista = new ArrayList&lt;&gt;();
+    lista.add("Elemento 1");</code></pre>
+        </div>
+    
+        <div class="question">¿Qué es un 'HashMap' en Java?</div>
+        <div class="answer">Un 'HashMap' en Java es una estructura de datos que almacena pares clave-valor. Permite acceder a los elementos de manera rápida utilizando la clave asociada.
+          <br><br>Ejemplo:
+          <pre><code>HashMap&lt;String, Integer&gt; mapa = new HashMap&lt;&gt;();
+    mapa.put("Uno", 1);</code></pre>
+        </div>
+    
+        <div class="question">¿Qué es un 'Thread' en Java?</div>
+        <div class="answer">Un 'Thread' en Java es una unidad de ejecución en un programa. Permite la ejecución concurrente de dos o más partes de un programa, lo que mejora la eficiencia y el rendimiento.
+          <br><br>Ejemplo:
+          <pre><code>class MiHilo extends Thread {
+        public void run() {
+            System.out.println("Hilo en ejecución");
+        }
+    }</code></pre>
+        </div>
+    
+        <div class="question">¿Qué hace el método 'finalize' en Java?</div>
+        <div class="answer">El método 'finalize' se invoca cuando un objeto es recolectado por el 'garbage collector'. Puede ser utilizado para liberar recursos o realizar limpieza antes de que el objeto sea destruido.
+          <br><br>Ejemplo:
+          <pre><code>protected void finalize() throws Throwable {
+        System.out.println("Objeto eliminado");
+    }</code></pre>
+        </div>
+    
+        <div class="question">¿Qué es 'JavaFX'?</div>
+        <div class="answer">JavaFX es un conjunto de bibliotecas en Java que permite crear interfaces gráficas de usuario (GUI) con una apariencia moderna. Es utilizado para desarrollar aplicaciones de escritorio y móviles.</div>
+    
+        <div class="question">¿Qué es 'JUnit'?</div>
+        <div class="answer">JUnit es un marco de trabajo para realizar pruebas unitarias en Java. Permite verificar que las partes individuales del código funcionen correctamente.
+          <br><br>Ejemplo:
+          <pre><code>@Test
+    public void testSuma() {
+        assertEquals(5, 2 + 3);
+    }</code></pre>
+        </div>
+    
+        <div class="question">¿Qué es 'Maven'?</div>
+        <div class="answer">Maven es una herramienta de automatización de construcción y gestión de proyectos en Java. Se utiliza para gestionar las dependencias, compilar el código y empaquetar aplicaciones.</div>
+    
+    </div>
+
+
+    <h1>Preguntas y Respuestas de Java y Angular</h1>
+    <div class="container">
+      <div class="question">¿Qué es Spring Boot y cuáles son sus ventajas?</div>
+      <div class="answer">Spring Boot es un marco de trabajo basado en el framework Spring que simplifica el desarrollo de
+        aplicaciones Java al proporcionar configuraciones automáticas y convenciones sobre configuraciones. Sus ventajas
+        incluyen una configuración mínima, un inicio rápido de aplicaciones, integración con otros proyectos de Spring, y
+        una amplia variedad de funcionalidades integradas, como soporte para bases de datos, seguridad y gestión de
+        dependencias.</div>
+  
+      <div class="question">¿Cómo se crea un proyecto en Spring Boot?</div>
+      <div class="answer">Se puede crear un proyecto en Spring Boot utilizando el Spring Initializr, una herramienta en
+        línea que permite seleccionar dependencias, versiones de Java y otras configuraciones iniciales. Alternativamente,
+        se puede usar un IDE como IntelliJ IDEA o Spring Tool Suite que tenga integración con Spring Boot para crear un
+        proyecto desde cero.</div>
+  
+      <div class="question">¿Qué son las anotaciones @RestController y @RequestMapping en Spring Boot?</div>
+      <div class="answer">La anotación <code>@RestController</code> es una combinación de <code>@Controller</code> y
+        <code>@ResponseBody</code>, que indica que la clase es un controlador donde los métodos devuelven datos en lugar
+        de vistas. La anotación <code>@RequestMapping</code> se utiliza para mapear solicitudes HTTP a métodos específicos
+        en un controlador. Permite definir la URL, el método HTTP y otros parámetros.</div>
+  
+      <div class="question">¿Cómo se maneja la inyección de dependencias en Spring Boot?</div>
+      <div class="answer">La inyección de dependencias en Spring Boot se gestiona a través de anotaciones como
+        <code>@Autowired</code>, que permite que Spring resuelva y proporcione automáticamente las dependencias requeridas
+        por los componentes. Esto se puede aplicar a clases de servicio, controladores y repositorios.</div>
+  
+      <div class="question">¿Qué es un Bean en Spring y cómo se define?</div>
+      <div class="answer">Un Bean en Spring es un objeto que forma parte del contexto de la aplicación y es gestionado por
+        el contenedor de Spring. Se puede definir un Bean utilizando la anotación <code>@Component</code>,
+        <code>@Service</code>, <code>@Repository</code>, o mediante métodos anotados con <code>@Bean</code> dentro de una
+        clase marcada con <code>@Configuration</code>.</div>
+  
+      <div class="question">¿Qué es la configuración basada en Java en Spring Boot?</div>
+      <div class="answer">La configuración basada en Java en Spring Boot permite definir Beans y configuraciones
+        utilizando clases Java en lugar de archivos XML. Esto proporciona una forma más clara y fácil de entender para
+        configurar aplicaciones y utilizar la inyección de dependencias mediante anotaciones.</div>
+  
+      <div class="question">¿Cómo se manejan las excepciones en Spring Boot?</div>
+      <div class="answer">En Spring Boot, las excepciones se pueden manejar utilizando <code>@ControllerAdvice</code>, que
+        permite definir un controlador global para manejar excepciones de manera centralizada. También se pueden usar
+        <code>@ExceptionHandler</code> para manejar excepciones específicas en controladores individuales.</div>
+  
+      <div class="question">¿Cómo se configuran las propiedades de la aplicación en Spring Boot?</div>
+      <div class="answer">Las propiedades de la aplicación en Spring Boot se configuran en el archivo
+        <code>application.properties</code> o <code>application.yml</code>. Estas propiedades pueden incluir
+        configuraciones como la conexión a la base de datos, el puerto del servidor, y otras configuraciones
+        personalizadas. Spring Boot carga automáticamente estas propiedades al iniciar la aplicación.</div>
+  
+      <div class="question">¿Qué es Spring Data JPA y cómo se utiliza en Spring Boot?</div>
+      <div class="answer">Spring Data JPA es un proyecto de Spring que facilita la interacción con bases de datos
+        utilizando la especificación JPA (Java Persistence API). En Spring Boot, se puede utilizar simplemente añadiendo
+        la dependencia de <code>spring-boot-starter-data-jpa</code> en el archivo <code>pom.xml</code>. Se pueden crear
+        interfaces de repositorio que extienden <code>JpaRepository</code> para realizar operaciones CRUD sin necesidad de
+        implementar el código de acceso a datos.</div>
+  
+      <div class="question">¿Cuál es la última versión de Java actualmente?</div>
+      <div class="answer">La última versión de Java es Java 21, lanzada en septiembre de 2023. Esta versión incluye nuevas
+        características como patrones de coincidencia, mejoras en el rendimiento y soporte para la programación funcional,
+        lo que la convierte en una opción más eficiente y fácil de usar para desarrolladores.</div>
+  
+      <div class="question">¿Cuál es la última versión de JDK?</div>
+      <div class="answer">La última versión del Java Development Kit (JDK) es la versión 21. Este kit incluye herramientas
+        necesarias para desarrollar aplicaciones en Java, como el compilador y el entorno de ejecución. Mantenerse
+        actualizado con la última versión es crucial para aprovechar las nuevas funcionalidades y mejoras de rendimiento.
+      </div>
+  
+      <div class="question">¿Qué diferencia hay entre el JDK y el JRE?</div>
+      <div class="answer">El JDK (Java Development Kit) incluye herramientas para desarrollar aplicaciones Java, mientras
+        que el JRE (Java Runtime Environment) proporciona las bibliotecas y recursos necesarios para ejecutar aplicaciones
+        Java. En resumen, si deseas programar en Java, necesitas el JDK, pero si solo deseas ejecutar aplicaciones, el JRE
+        es suficiente.</div>
+  
+      <div class="question">¿Qué es la programación funcional e imperativa?</div>
+      <div class="answer">La programación funcional es un paradigma que trata el cálculo como la evaluación de funciones y
+        evita el uso de estados y datos mutables. Por otro lado, la programación imperativa se basa en comandos que
+        cambian el estado del programa, enfocándose en cómo se debe realizar una tarea. Ambos paradigmas ofrecen
+        diferentes enfoques para resolver problemas de programación.</div>
+  
+      <div class="question">¿A partir de qué versión de Java se implementó la programación funcional?</div>
+      <div class="answer">La programación funcional fue implementada en Java 8, lanzada en marzo de 2014. Esta versión
+        introdujo características como expresiones lambda y Streams, que facilitan la programación funcional y permiten a
+        los desarrolladores escribir código más limpio y conciso.</div>
+  
+      <div class="question">Características de la POO. Ejemplos de aplicación de cada uno.</div>
+      <div class="answer">La Programación Orientada a Objetos (POO) tiene varias características clave:
+        <ul>
+          <li><strong>Encapsulamiento</strong>: Agrupamiento de datos y métodos que operan sobre ellos, limitando el
+            acceso externo. Ejemplo: una clase `Coche` con atributos privados y métodos públicos para acceder y modificar
+            esos atributos.</li>
+          <li><strong>Herencia</strong>: Permite crear nuevas clases basadas en clases existentes, reutilizando código.
+            Ejemplo: una clase `Vehiculo` que es extendida por `Coche` y `Motocicleta`.</li>
+          <li><strong>Polimorfismo</strong>: Permite que diferentes clases puedan ser tratadas como instancias de la misma
+            clase a través de una interfaz común. Ejemplo: un método `dibujar` que puede ser implementado de diferentes
+            maneras en distintas clases que implementan una interfaz `Dibujable`.</li>
+        </ul>
+      </div>
+  
+      <div class="question">Diferencias entre una clase abstracta y una interfaz.</div>
+      <div class="answer">Una clase abstracta puede contener métodos concretos (con implementación) y abstractos (sin
+        implementación), mientras que una interfaz solo puede contener métodos abstractos y constantes. En una clase
+        abstracta, puedes definir un comportamiento base, mientras que una interfaz es un contrato que las clases
+        implementadoras deben cumplir. Esto permite a las interfaces ser más flexibles, ya que una clase puede implementar
+        múltiples interfaces, mientras que solo puede extender una clase abstracta.</div>
+  
+      <div class="question">Diferencia entre HashMap y LinkedList. Ejemplos de implementación.</div>
+      <div class="answer">`HashMap` es una implementación de mapa que almacena pares clave-valor, permite acceder a los
+        valores rápidamente mediante claves, pero no mantiene el orden de inserción. Ejemplo:
+        <pre><code>HashMap&lt;String, Integer&gt; mapa = new HashMap&lt;&gt;();
+  mapa.put("uno", 1);
+  mapa.put("dos", 2);
+  </code></pre>
+        `LinkedList` es una implementación de lista que permite inserciones y eliminaciones rápidas, pero el acceso a los
+        elementos es más lento en comparación con los arrays. Ejemplo:
+        <pre><code>LinkedList&lt;String&gt; lista = new LinkedList&lt;&gt;();
+  lista.add("uno");
+  lista.add("dos");
+  </code></pre>
+      </div>
+  
+      <div class="question">¿Cómo hacer un deploy?</div>
+      <div class="answer">El despliegue de una aplicación implica varios pasos, como preparar el entorno de producción,
+        compilar el código, realizar pruebas, y luego transferir los archivos al servidor. Puedes usar herramientas de
+        integración continua como Jenkins o GitHub Actions para automatizar este proceso. Es importante asegurarte de que
+        el entorno de producción tenga las mismas configuraciones que el entorno de desarrollo para evitar problemas al
+        ejecutar la aplicación.</div>
+  
+      <div class="question">¿Cómo hacer pruebas de backend si no tienes un frontend?</div>
+      <div class="answer">Puedes realizar pruebas de backend utilizando herramientas como Postman o cURL para hacer
+        solicitudes HTTP a las APIs. También puedes escribir pruebas unitarias y de integración utilizando frameworks como
+        JUnit y Mockito, que permiten simular el comportamiento de las dependencias y verificar que el código funcione
+        correctamente sin necesidad de una interfaz gráfica.</div>
+  
+      <div class="question">Diferencias entre Spring y Spring Boot.</div>
+      <div class="answer">Spring es un framework para desarrollar aplicaciones en Java que proporciona características
+        como inyección de dependencias y programación orientada a aspectos. Spring Boot, por otro lado, es una extensión
+        de Spring que facilita la creación de aplicaciones de producción, proporcionando configuración automática y un
+        enfoque de "convención sobre configuración". Esto significa que Spring Boot permite desarrollar aplicaciones más
+        rápidamente, eliminando la necesidad de configurar manualmente la mayoría de las características.</div>
+  
+      <div class="question">¿Utilizaste control de versiones? ¿Cómo volver un commit atrás?</div>
+      <div class="answer">Sí, utilicé control de versiones, principalmente Git. Para volver a un commit anterior, puedes
+        usar el comando `git checkout &lt;commit_id&gt;` para ver el estado del repositorio en ese commit. Si deseas
+        revertir el último commit, puedes usar `git revert HEAD` o `git reset --hard &lt;commit_id&gt;` para deshacer
+        cambios, aunque este último eliminará cambios posteriores en tu historial.</div>
+  
+      <div class="question">¿Qué patrones de diseño conoces?</div>
+      <div class="answer">Conozco varios patrones de diseño, entre ellos:
+        <ul>
+          <li><strong>Singleton</strong>: Garantiza que una clase tenga una única instancia y proporciona un punto de
+            acceso global a ella.</li>
+          <li><strong>Factory</strong>: Proporciona una interfaz para crear objetos en una clase base, permitiendo a las
+            subclases modificar el tipo de objetos que se crearán.</li>
+          <li><strong>Observer</strong>: Define una dependencia de uno a muchos entre objetos, de manera que cuando un
+            objeto cambia de estado, todos sus dependientes son notificados.</li>
+        </ul>
+      </div>
+  
+      <div class="question">Diferencias entre un árbol binario y un árbol AVL.</div>
+      <div class="answer">Un árbol binario es una estructura de datos donde cada nodo tiene hasta dos hijos. Sin embargo,
+        un árbol AVL es un tipo de árbol binario auto-balanceado, donde la diferencia de altura entre los subárboles
+        izquierdo y derecho de cualquier nodo no puede ser mayor que uno. Esto permite que un árbol AVL mantenga un tiempo
+        de búsqueda, inserción y eliminación en O(log n), mientras que en un árbol binario, estos tiempos pueden ser O(n)
+        en el peor caso si el árbol no está balanceado.</div>
+  
+      
+  
+    </div>
+
+
+    <br>
+<br><br>
+<br>
+
+
+<footer>
+    <p>&copy; 2024 Fernando Leon Medina - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>

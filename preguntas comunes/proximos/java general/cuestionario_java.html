@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de Java y Angular</title>
+    <style>
+        body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .question {
+      background-color: #e9f5ff;
+      padding: 15px;
+      border-radius: 5px;
+      margin: 10px 0;
+      border-left: 5px solid #007bff;
+      transition: background-color 0.3s;
+    }
+
+    .question:hover {
+      background-color: #d0ebff;
+    }
+
+    .answer {
+      margin-left: 20px;
+      color: #555;
+      background: #f7f7f7;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .answer code {
+      background: #e8e8e8;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+    }
+
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+        <header>
+        <h1>Bienvenido a la Página de Cuestionarios</h1>
+    </header>
+    
+    <nav>
+        <a href="cuestionario_java.html">Cuestionario Java</a>
+        <a href="cuestionario_angular.html">Cuestionario Angular</a>
+        <a href="pagina.html">Temario</a>
+    </nav>
+
+
+    <h1>Cuestionario de Java y Angular</h1>
+    <div class="container">
+    <form id="quizForm"></form>
+    <button type="button" onclick="submitQuiz()">Enviar</button>
+    
+    <script>
+        
+        const javaQuestions = [
+            {
+                question: "¿Qué es Java?",
+                options: ["Un sistema operativo", "Un lenguaje de programación", "Una base de datos"],
+                answer: 1
+            },
+            {
+                question: "¿Qué es una clase en Java?",
+                options: ["Una plantilla para crear objetos", "Un tipo de variable", "Un método especial"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es la herencia en Java?",
+                options: ["Cuando una clase hereda atributos de otra clase", "Un tipo de excepción", "Un método de la clase Object"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es una interfaz en Java?",
+                options: ["Un conjunto de métodos abstractos", "Una clase concreta", "Una variable"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es un constructor en Java?",
+                options: ["Un método que se llama al crear un objeto", "Un tipo de variable", "Un método de la clase Object"],
+                answer: 0
+            },
+            {
+                question: "¿Qué significa 'JDK'?",
+                options: ["Java Development Kit", "Java Document Kit", "Java Debug Kit"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es el 'garbage collection' en Java?",
+                options: ["Un proceso para manejar errores", "Un mecanismo para liberar memoria no utilizada", "Un tipo de excepción"],
+                answer: 1
+            },
+            {
+                question: "¿Cuál de los siguientes no es un tipo de dato primitivo en Java?",
+                options: ["int", "String", "boolean"],
+                answer: 1
+            },
+            {
+                question: "¿Qué es un paquete en Java?",
+                options: ["Un contenedor de clases relacionadas", "Un tipo de excepción", "Una interfaz"],
+                answer: 0
+            },
+            {
+                question: "¿Qué hace el método 'main' en Java?",
+                options: ["Es el punto de entrada de la aplicación", "Es un método privado", "Es un constructor"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es un 'try-catch' en Java?",
+                options: ["Una estructura de control para manejar excepciones", "Un tipo de ciclo", "Un operador"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es una excepción en Java?",
+                options: ["Un error que puede ser manejado en tiempo de ejecución", "Un tipo de variable", "Un método"],
+                answer: 0
+            },
+            {
+                question: "¿Qué significa 'OOP'?",
+                options: ["Orientación a Objetos", "Operaciones de Objeto", "Operaciones Orientadas"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es una variable estática?",
+                options: ["Una variable que pertenece a la clase en lugar de a una instancia", "Una variable que no se puede cambiar", "Una variable local"],
+                answer: 0
+            },
+            {
+                question: "¿Qué hace el operador 'instanceof' en Java?",
+                options: ["Verifica si un objeto es una instancia de una clase", "Crea una instancia de una clase", "Declara una variable"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es el 'polimorfismo' en Java?",
+                options: ["La capacidad de un objeto de tomar muchas formas", "Un tipo de bucle", "Un tipo de variable"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es un 'ArrayList' en Java?",
+                options: ["Una colección que puede cambiar de tamaño", "Un tipo de arreglo fijo", "Una clase de objeto"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es un 'HashMap' en Java?",
+                options: ["Una estructura de datos que almacena pares clave-valor", "Un tipo de lista", "Un tipo de arreglo"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es un 'Thread' en Java?",
+                options: ["Una unidad de ejecución en un programa", "Un tipo de variable", "Una clase de colección"],
+                answer: 0
+            },
+            {
+                question: "¿Qué hace el método 'finalize' en Java?",
+                options: ["Se llama antes de que un objeto sea recolectado por el garbage collector", "Es un método que no puede ser sobrescrito", "Es un constructor"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es 'JavaFX'?",
+                options: ["Una biblioteca para crear aplicaciones de escritorio", "Un lenguaje de programación", "Un sistema operativo"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es 'JDBC'?",
+                options: ["Java Database Connectivity", "Java Document Base Class", "Java Debugging Code"],
+                answer: 0
+            },
+        ];
+
+        const angularQuestions = [
+            {
+                question: "¿Qué es Angular?",
+                options: ["Un lenguaje de programación", "Un marco de trabajo para construir aplicaciones web", "Una base de datos"],
+                answer: 1
+            },
+            {
+                question: "¿Qué tipo de arquitectura utiliza Angular?",
+                options: ["Monolítica", "Basada en componentes", "Basada en servicios"],
+                answer: 1
+            },
+            {
+                question: "¿Qué es un componente en Angular?",
+                options: ["Una parte de la interfaz de usuario", "Una clase de servicio", "Una directiva"],
+                answer: 0
+            },
+            {
+                question: "¿Cuál es la función de los servicios en Angular?",
+                options: ["Almacenar datos", "Proveer lógica de negocio", "Gestionar la interfaz de usuario"],
+                answer: 1
+            },
+            {
+                question: "¿Qué es el `@Injectable` en Angular?",
+                options: ["Un decorador para componentes", "Un decorador para servicios", "Un decorador para módulos"],
+                answer: 1
+            },
+            {
+                question: "¿Qué es el `ngIf` en Angular?",
+                options: ["Una directiva para manejar eventos", "Una directiva para mostrar u ocultar elementos", "Una directiva para manejar formularios"],
+                answer: 1
+            },
+            {
+                question: "¿Qué es el `ngFor` en Angular?",
+                options: ["Una directiva para mostrar datos en listas", "Una directiva para manejar eventos", "Un pipe para formatear datos"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es un `module` en Angular?",
+                options: ["Un tipo de componente", "Un contenedor que agrupa componentes, servicios y directivas relacionados", "Una clase para manejar formularios"],
+                answer: 1
+            },
+            {
+                question: "¿Cómo se declara un componente en Angular?",
+                options: ["Usando el decorador `@Component`", "Usando el decorador `@Directive`", "Usando el decorador `@Injectable`"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es el `async pipe` en Angular?",
+                options: ["Un pipe para convertir promesas en observables", "Un pipe que permite suscribirse a un observable directamente en la vista", "Un pipe para formatear fechas"],
+                answer: 1
+            },
+            {
+                question: "¿Qué es el `FormBuilder` en Angular?",
+                options: ["Un módulo para manejar archivos", "Una clase para crear formularios de manera programática", "Un componente para manejar eventos"],
+                answer: 1
+            },
+            {
+                question: "¿Qué es el `ngContent` en Angular?",
+                options: ["Un componente que muestra contenido dinámico", "Una directiva para proyectar contenido en componentes hijos", "Un servicio para manejar eventos del usuario"],
+                answer: 1
+            },
+            {
+                question: "¿Qué es el `ng-template` en Angular?",
+                options: ["Un componente que muestra datos", "Un contenedor para definir vistas que se pueden reutilizar", "Una directiva para manejar eventos del usuario"],
+                answer: 1
+            },
+            {
+                question: "¿Qué es una directiva en Angular?",
+                options: ["Una clase que puede modificar el comportamiento del DOM", "Una clase que define la estructura de una aplicación", "Un componente reutilizable"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es el `router` en Angular?",
+                options: ["Un servicio para manejar eventos", "Una herramienta para gestionar rutas y navegación en la aplicación", "Un decorador para componentes"],
+                answer: 1
+            },
+            {
+                question: "¿Cómo se comunica un componente hijo con un componente padre en Angular?",
+                options: ["A través de servicios", "Usando decoradores", "A través de propiedades y eventos"],
+                answer: 2
+            },
+            {
+                question: "¿Qué es un observable en Angular?",
+                options: ["Un objeto que puede ser observado para detectar cambios", "Un tipo de variable", "Un método para manejar eventos"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es el `ngModel` en Angular?",
+                options: ["Una directiva para vincular datos bidireccionalmente", "Una clase para manejar formularios", "Un servicio para manejar eventos"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es el `@Input` en Angular?",
+                options: ["Un decorador para pasar datos del componente padre al hijo", "Un decorador para inyectar servicios", "Un decorador para definir un componente"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es el `@Output` en Angular?",
+                options: ["Un decorador para emitir eventos desde un componente hijo", "Un decorador para pasar datos al padre", "Un decorador para definir un servicio"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es la inyección de dependencias en Angular?",
+                options: ["Un patrón de diseño para gestionar las dependencias entre clases", "Un método para crear instancias de componentes", "Un servicio para manejar eventos"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es el `HttpClient` en Angular?",
+                options: ["Un servicio para hacer peticiones HTTP", "Una clase para manejar formularios", "Un componente para mostrar datos"],
+                answer: 0
+            },
+            {
+                question: "¿Qué es el `Observable` de RxJS?",
+                options: ["Un objeto que emite datos a lo largo del tiempo", "Un tipo de variable", "Un servicio para manejar eventos"],
+                answer: 0
+            },
+        ];
+
+        function getRandomQuestions(questions, count) {
+            const shuffled = questions.sort(() => 0.5 - Math.random());
+            return shuffled.slice(0, count);
+        }
+
+        function loadQuiz() {
+            const quizForm = document.getElementById('quizForm');
+            const selectedJavaQuestions = getRandomQuestions(javaQuestions, 10);
+            const selectedAngularQuestions = getRandomQuestions(angularQuestions, 10);
+            const allQuestions = [...selectedJavaQuestions, ...selectedAngularQuestions];
+            let quizHTML = '';
+
+            allQuestions.forEach((q, index) => {
+                quizHTML += `
+                    <div class="question">
+                        <p>${index + 1}. ${q.question}</p>
+                        <div class="options">
+                            ${q.options.map((option, i) => `
+                                <label>
+                                    <input type="radio" name="question${index}" value="${i}">
+                                    ${option}
+                                </label>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            });
+
+            quizForm.innerHTML = quizHTML;
+        }
+
+        function submitQuiz() {
+            const form = document.getElementById('quizForm');
+            const formData = new FormData(form);
+            let score = 0;
+            let totalQuestions = 20; // Total de preguntas (10 Java + 10 Angular)
+
+            formData.forEach((value, key) => {
+                const questionIndex = parseInt(key.replace('question', ''));
+                const question = [...javaQuestions, ...angularQuestions][questionIndex];
+                if (question && parseInt(value) === question.answer) {
+                    score++;
+                }
+            });
+
+            alert(`Tu puntaje es ${score} de ${totalQuestions}`);
+        }
+
+        window.onload = loadQuiz;
+    </script>
+      </div>
+</body>
+</html>

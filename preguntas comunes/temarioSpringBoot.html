@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Preguntas y Respuestas de Java y Angular</title>
+  <style>
+    body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            background-color: #e9f5ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 5px solid #2defc9;
+            transition: background-color 0.3s;
+        }
+
+        .question:hover {
+            background-color: #d0ffe1;
+        }
+
+        .answer {
+            margin-left: 20px;
+            color: #555;
+            background: #f7f7f7;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .answer code {
+            background: #e8e8e8;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 25px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+      
+        footer {
+            text-align: center;
+            padding: 8px 0;
+            background-color: #000000;
+            color: white;
+            width: 100%;
+            bottom: 0;
+        }
+
+  </style>
+</head>
+
+<body>
+
+<header >
+    <h1 ><i style="color: #06ff66;" onmouseover="this.style.color='#44c8f0';" onmouseout="this.style.color='#0659ff';"  class="fas fa-code"></i>Spring Boot Section <i class="fas fa-leaf"></i></h1>
+</header>
+
+<nav>
+    <a style="color: #e36060;" onmouseover="this.style.color='#ff8c00';" onmouseout="this.style.color='#e36060';" href="javaTemario.html">
+        Temario Java <i class="fab fa-java"></i>
+   </a>
+   <a style="color: #e36060;" onmouseover="this.style.color='#ff8c00';" onmouseout="this.style.color='#e36060';" href="cuestionario_java.html">
+     <i class="fas fa-check-circle"></i>  Java Test  
+   </a>
+   <a style="color: #b3ddb9;" onmouseover="this.style.color='#07cb00';" onmouseout="this.style.color='#b3ddb9';" href="temarioSpringBoot.html">
+    Temario Spring Boot <i class="fas fa-leaf"></i>
+   </a>
+   <a style="color: #b3ddb9;" onmouseover="this.style.color='#07cb00';" onmouseout="this.style.color='#b3ddb9';" href="cuestionarioSpringBoot.html">
+       <i class="fas fa-check-circle"></i> Spring Boot Test
+   </a>
+   <a style="color: #f3f3f3;" onmouseover="this.style.color='#0bc1fe';" onmouseout="this.style.color='#f3f3f3';" href="index.html">
+       <i class="fas fa-home"></i> 
+   </a>
+   <a style="color: #ddb3cc;" onmouseover="this.style.color='#fe0ba1';" onmouseout="this.style.color='#ddb3cc';" href="angularTemario.html">
+       <i class="fab fa-angular"></i> Temario Angular
+   </a>
+   <a style="color: #ddb3cc;" onmouseover="this.style.color='#fe0ba1';" onmouseout="this.style.color='#ddb3cc';" href="cuestionario_angular.html">
+     <i class="fas fa-check-circle"></i></i> Angular Test
+   </a>
+   <a style="color: #ddb3cc;" onmouseover="this.style.color='#fe0ba1';" onmouseout="this.style.color='#ddb3cc';" href="cuestionario_mix_Ang_Jav.html">
+       <i class="fas fa-check-circle"></i> Java and Angular Test
+   </a>
+   <a style="color: #b3cddd;" onmouseover="this.style.color='#bd0bfe';" onmouseout="this.style.color='#b3cddd';" href="https://github.com/chaton444">
+       <i class="fab fa-github"></i> GitHub
+   </a>  
+
+</nav>
+
+<div class="container">
+    <h1 style="font-size: 3em; background: linear-gradient(35deg, rgb(4, 253, 145), #4ce8be); -webkit-background-clip:text; color: transparent;">
+       Temario sobre Java y Spring Boot
+    </h1>
+    
+    <div class="question">¿Cuál es la última versión de Java actualmente?</div>
+    <div class="answer">La última versión de Java es Java 23.</div>
+
+    <div class="question">¿Cuál es la última versión de JDK?</div>
+    <div class="answer">La última versión del JDK es JDK 23.</div>
+
+    <div class="question">¿Qué diferencia hay entre el JDK y el JRE?</div>
+    <div class="answer">El JDK (Java Development Kit) incluye herramientas para desarrollar aplicaciones Java, mientras que el JRE (Java Runtime Environment) solo permite ejecutar aplicaciones Java.</div>
+
+    <div class="question">¿Qué es la programación funcional e imperativa?</div>
+    <div class="answer">La programación imperativa se centra en cómo se realiza una tarea mediante declaraciones y comandos, mientras que la programación funcional se basa en el uso de funciones como objetos de primera clase. Por ejemplo:</div>
+    <pre><code>// Programación imperativa
+int suma = 0;
+for (int i = 1; i <= 10; i++) {
+suma += i;
+}
+
+// Programación funcional
+int suma = IntStream.rangeClosed(1, 10).sum();
+</code></pre>
+
+    <div class="question">¿A partir de qué versión de Java se implementó la programación funcional?</div>
+    <div class="answer">La programación funcional se implementó a partir de Java 8.</div>
+
+    <div class="question">Características de la POO. Ejemplos de aplicación de cada uno.</div>
+    <div class="answer">
+        <ul>
+            <li><strong>Encapsulamiento:</strong> Ocultar detalles internos de una clase. Ejemplo:
+            <pre><code>class CuentaBancaria {
+private double saldo;
+
+public void depositar(double cantidad) {
+    saldo += cantidad;
+}
+
+public double getSaldo() {
+    return saldo;
+}
+}</code></pre></li>
+            <li><strong>Herencia:</strong> Permitir que una clase herede atributos y métodos de otra. Ejemplo:
+            <pre><code>class Vehiculo {
+void acelerar() { System.out.println("Acelerando"); }
+}
+
+class Coche extends Vehiculo {
+void abrirCofre() { System.out.println("Cofre abierto"); }
+}</code></pre></li>
+            <li><strong>Polimorfismo:</strong> Permitir que una misma operación se realice de diferentes maneras. Ejemplo:
+            <pre><code>class Animal {
+void hacerSonido() { System.out.println("Sonido de animal"); }
+}
+
+class Perro extends Animal {
+void hacerSonido() { System.out.println("Guau"); }
+}
+
+class Gato extends Animal {
+void hacerSonido() { System.out.println("Miau"); }
+}</code></pre></li>
+            <li><strong>Abstracción:</strong> Simplificar la complejidad utilizando clases abstractas o interfaces. Ejemplo:
+            <pre><code>interface Forma {
+double area();
+}
+
+class Circulo implements Forma {
+private double radio;
+
+public Circulo(double radio) { this.radio = radio; }
+
+public double area() {
+    return Math.PI * radio * radio;
+}
+}</code></pre></li>
+        </ul>
+    </div>
+
+    <div class="question">Diferencias entre una clase abstracta y una interfaz.</div>
+    <div class="answer">
+        <ul>
+            <li>Una clase abstracta puede tener implementación de métodos, mientras que una interfaz solo puede declarar métodos.</li>
+            <li>Una clase puede implementar múltiples interfaces, pero solo puede extender de una clase abstracta.</li>
+            <li>Ejemplo de clase abstracta:
+            <pre><code>abstract class Animal {
+abstract void hacerSonido();
+}
+
+class Perro extends Animal {
+void hacerSonido() { System.out.println("Guau"); }
+}</code></pre></li>
+            <li>Ejemplo de interfaz:
+            <pre><code>interface Volador {
+void volar();
+}
+
+class Pajaro implements Volador {
+public void volar() { System.out.println("El pájaro vuela"); }
+}</code></pre></li>
+        </ul>
+    </div>
+
+    <div class="question">Diferencia entre HashMap y LinkedList. Ejemplos de implementación.</div>
+    <div class="answer">
+        <ul>
+            <li><strong>HashMap:</strong> Almacena pares clave-valor y proporciona acceso rápido. Ejemplo:
+            <pre><code>HashMap<String, Integer> map = new HashMap<>();
+map.put("uno", 1);
+map.put("dos", 2);
+System.out.println(map.get("uno")); // Imprime 1
+</code></pre></li>
+            <li><strong>LinkedList:</strong> Es una lista que permite el acceso secuencial. Ejemplo:
+            <pre><code>LinkedList<String> list = new LinkedList<>();
+list.add("elemento1");
+list.add("elemento2");
+System.out.println(list.get(0)); // Imprime "elemento1"
+</code></pre></li>
+        </ul>
+    </div>
+
+    <div class="question">¿Cómo hacer un deploy?</div>
+    <div class="answer">El proceso de despliegue implica compilar la aplicación, empaquetarla (por ejemplo, en un archivo JAR o WAR) y subirla a un servidor o servicio en la nube. Ejemplo de comando para empaquetar con Maven:
+    <pre><code>mvn clean package</code></pre>
+    </div>
+
+    <div class="question">¿Cómo hacer pruebas de backend si no tienes un frontend?</div>
+    <div class="answer">Se pueden utilizar herramientas como Postman o cURL para enviar solicitudes HTTP a las APIs del backend y verificar las respuestas. Ejemplo de uso de cURL:
+    <pre><code>curl -X GET http://localhost:8080/api/usuarios</code></pre>
+    </div>
+
+    <div class="question">Diferencias entre Spring y Spring Boot.</div>
+    <div class="answer">
+        <ul>
+            <li>Spring es un framework amplio, mientras que Spring Boot es una extensión que simplifica la configuración y despliegue de aplicaciones Spring.</li>
+            <li>Spring Boot incluye configuraciones automáticas para reducir la cantidad de configuración manual necesaria. Ejemplo de una aplicación simple con Spring Boot:
+            <pre><code>@SpringBootApplication
+public class Aplicacion {
+public static void main(String[] args) {
+    SpringApplication.run(Aplicacion.class, args);
+}
+}</code></pre></li>
+        </ul>
+    </div>
+
+    <div class="question">¿Utilizaste control de versiones? ¿Cómo volver un commit atrás?</div>
+    <div class="answer">Sí, se utiliza Git como sistema de control de versiones. Para volver un commit atrás, se puede usar el comando 
+    <pre><code>git checkout &lt;commit_id&gt;</code></pre>.
+    </div>
+
+    <div class="question">¿Qué patrones de diseño conoces?</div>
+    <div class="answer">Conozco patrones como Singleton, Factory, Observer y Decorator. Ejemplo de patrón Singleton:
+    <pre><code>class Singleton {
+private static Singleton instancia;
+
+private Singleton() {}
+
+public static Singleton getInstancia() {
+    if (instancia == null) {
+        instancia = new Singleton();
+    }
+    return instancia;
+}
+}</code></pre>
+    </div>
+
+    <div class="question">¿Qué es el principio SOLID?</div>
+    <div class="answer">SOLID es un acrónimo que representa cinco principios de diseño de software:
+        <ul>
+            <li><strong>S:</strong> Single Responsibility Principle (Principio de Responsabilidad Única)</li>
+            <li><strong>O:</strong> Open/Closed Principle (Principio Abierto/Cerrado)</li>
+            <li><strong>L:</strong> Liskov Substitution Principle (Principio de Sustitución de Liskov)</li>
+            <li><strong>I:</strong> Interface Segregation Principle (Principio de Segregación de Interfaces)</li>
+            <li><strong>D:</strong> Dependency Inversion Principle (Principio de Inversión de Dependencias)</li>
+        </ul>
+    </div>
+
+    <div class="question">Ejemplo de un patrón de diseño que puedas implementar.</div>
+    <div class="answer">Un ejemplo es el patrón Factory, que permite crear objetos sin especificar la clase exacta del objeto que se creará:
+    <pre><code>interface Vehiculo {
+void conducir();
+}
+
+class Coche implements Vehiculo {
+public void conducir() { System.out.println("Conduciendo un coche"); }
+}
+
+class Camion implements Vehiculo {
+public void conducir() { System.out.println("Conduciendo un camión"); }
+}
+
+class VehiculoFactory {
+public static Vehiculo crearVehiculo(String tipo) {
+    if (tipo.equalsIgnoreCase("coche")) {
+        return new Coche();
+    } else if (tipo.equalsIgnoreCase("camion")) {
+        return new Camion();
+    }
+    return null;
+}
+}
+</code></pre></div>
+
+    <div class="question">¿Qué diseño puedes usar para una clase donde no se puede instanciar más de una vez?</div>
+    <div class="answer">Se puede utilizar el patrón Singleton para asegurar que solo haya una instancia de la clase en todo el programa.
+    <pre><code>class Singleton {
+private static Singleton instancia;
+
+private Singleton() {}
+
+public static Singleton getInstancia() {
+    if (instancia == null) {
+        instancia = new Singleton();
+    }
+    return instancia;
+}
+}</code></pre></div>
+
+    <div class="question">¿Cómo manejarías las excepciones en un método? ¿Qué se utiliza para controlarlas?</div>
+    <div class="answer">Las excepciones se manejan utilizando bloques <code>try-catch</code> para capturar excepciones y <code>finally</code> para ejecutar código que debe ejecutarse independientemente de si se lanza una excepción. Ejemplo:
+    <pre><code>try {
+int resultado = 10 / 0;
+} catch (ArithmeticException e) {
+System.out.println("Error: División por cero");
+} finally {
+System.out.println("Bloque finally ejecutado");
+}</code></pre></div>
+
+
+<div class="question">¿Qué diferencia hay entre el JDK y el JRE?</div>
+<div class="answer">El JDK (Java Development Kit) es un paquete completo que incluye herramientas para desarrollar, compilar y ejecutar aplicaciones Java, mientras que el JRE (Java Runtime Environment) solo proporciona los componentes necesarios para ejecutar aplicaciones Java. Es decir, el JDK incluye el JRE.</div>
+
+<div class="question">¿Qué es la programación funcional e imperativa?</div>
+<div class="answer">La programación funcional se basa en el uso de funciones puras, evitando estados mutables y efectos secundarios. En cambio, la programación imperativa se centra en cómo se deben realizar las tareas, utilizando declaraciones y cambios de estado. Java soporta ambos paradigmas, especialmente a partir de Java 8.</div>
+
+<div class="question">A partir de qué versión de Java se implementó la programación funcional?</div>
+<div class="answer">La programación funcional se implementó en Java a partir de la versión 8, que introdujo características como las expresiones lambda y el API de Streams.</div>
+
+<div class="question">Características de la POO. Ejemplos de aplicación de cada uno.</div>
+<div class="answer">
+    <ul>
+        <li><strong>Encapsulamiento:</strong> Agrupar datos y métodos que operan sobre esos datos. Ejemplo: una clase <code>CuentaBancaria</code> que tiene atributos privados como <code>saldo</code> y métodos públicos como <code>depositar()</code>.</li>
+        <li><strong>Herencia:</strong> Permitir que una clase derive de otra. Ejemplo: una clase <code>Empleado</code> que hereda de una clase <code>Persona</code>.</li>
+        <li><strong>Polimorfismo:</strong> Permitir que un mismo método tenga diferentes comportamientos. Ejemplo: el método <code>dibujar()</code> puede ser sobrescrito en una clase <code>Circulo</code> y en una clase <code>Rectangulo</code>.</li>
+        <li><strong>Abstracción:</strong> Resaltar los aspectos esenciales de un objeto, ignorando los detalles. Ejemplo: una clase abstracta <code>Vehiculo</code> que tiene métodos abstractos como <code>mover()</code>.</li>
+    </ul>
+</div>
+
+<div class="question">Diferencias entre una clase abstracta y una interfaz.</div>
+<div class="answer">Una clase abstracta puede contener implementaciones de métodos y estados (atributos), mientras que una interfaz solo puede contener declaraciones de métodos y constantes. Además, una clase puede extender solo una clase abstracta, pero puede implementar múltiples interfaces.</div>
+
+<div class="question">Diferencia entre HashMap y LinkedList. Ejemplos de implementación.</div>
+<div class="answer">
+    <ul>
+        <li><strong>HashMap:</strong> Almacena pares clave-valor y permite acceso rápido a los valores a través de la clave. Ejemplo:
+        <pre><code>HashMap<String, Integer> edades = new HashMap<>();
+edades.put("Juan", 30);
+edades.put("Ana", 25);
+</code></pre></li>
+        <li><strong>LinkedList:</strong> Es una lista que permite inserciones y eliminaciones eficientes. Ejemplo:
+        <pre><code>LinkedList<String> nombres = new LinkedList<>();
+nombres.add("Juan");
+nombres.add("Ana");
+</code></pre></li>
+    </ul>
+</div>
+
+<div class="question">¿Cómo hacer un deploy?</div>
+<div class="answer">Para hacer un deploy de una aplicación Java Spring Boot, se puede empaquetar la aplicación en un archivo JAR ejecutable y desplegarlo en un servidor, como Tomcat o directamente en un servidor de aplicaciones que soporte Spring Boot. Esto se puede hacer usando herramientas como Docker o servicios en la nube como AWS, Azure, o Heroku.</div>
+
+<div class="question">¿Cómo hacer pruebas de backend si no tienes un frontend?</div>
+<div class="answer">Se pueden realizar pruebas de backend utilizando herramientas como Postman para enviar solicitudes HTTP a las APIs y verificar las respuestas. También se pueden usar frameworks de pruebas como JUnit para crear pruebas unitarias y de integración.</div>
+
+<div class="question">Diferencias entre Spring y Spring Boot.</div>
+<div class="answer">Spring es un framework completo que proporciona una infraestructura para el desarrollo de aplicaciones Java, mientras que Spring Boot es una extensión de Spring que simplifica la configuración y el despliegue de aplicaciones, proporcionando configuraciones predeterminadas y la capacidad de crear aplicaciones independientes.</div>
+
+<div class="question">¿Utilizaste control de versiones? ¿Cómo volver un commit atrás?</div>
+<div class="answer">Sí, se puede usar Git como control de versiones. Para volver a un commit anterior, se puede usar el comando <code>git checkout [commit_id]</code> o <code>git reset --hard [commit_id]</code>, dependiendo de si se desea mantener los cambios posteriores o no.</div>
+
+<div class="question">¿Qué patrones de diseño conoces?</div>
+<div class="answer">Algunos patrones de diseño son el patrón Singleton, Factory, Observer, Strategy y Decorator. Cada uno resuelve diferentes problemas de diseño y promueve buenas prácticas en la arquitectura del software.</div>
+
+<div class="question">¿Qué es el principio SOLID?</div>
+<div class="answer">SOLID es un acrónimo que representa cinco principios de diseño orientado a objetos que promueven la mantenibilidad y escalabilidad del software:
+    <ul>
+        <li><strong>S:</strong> Single Responsibility Principle (Principio de Responsabilidad Única)</li>
+        <li><strong>O:</strong> Open/Closed Principle (Principio de Abierto/Cerrado)</li>
+        <li><strong>L:</strong> Liskov Substitution Principle (Principio de Sustitución de Liskov)</li>
+        <li><strong>I:</strong> Interface Segregation Principle (Principio de Segregación de Interfaces)</li>
+        <li><strong>D:</strong> Dependency Inversion Principle (Principio de Inversión de Dependencias)</li>
+    </ul>
+</div>
+
+<div class="question">¿Qué SGBD utilizaste? ¿Qué conexiones hiciste?</div>
+<div class="answer">He utilizado MySQL como SGBD, realizando conexiones a través de JDBC o utilizando Spring Data JPA para interactuar con la base de datos y realizar operaciones CRUD.</div>
+
+<div class="question">¿Sabes hacer consultas, subconsultas y relaciones entre tablas?</div>
+<div class="answer">Sí, puedo realizar consultas SQL, subconsultas y definir relaciones entre tablas utilizando claves foráneas. También puedo utilizar ORM como Hibernate para gestionar estas relaciones de manera más sencilla en aplicaciones Java.</div>
+
+<div class="question">¿Qué diferencia existe entre DER y Diagrama de clases (UML)?</div>
+<div class="answer">Un DER (Diagrama Entidad-Relación) se utiliza para modelar bases de datos y representar entidades y sus relaciones, mientras que un diagrama de clases UML se utiliza para representar la estructura de clases en un sistema orientado a objetos, incluyendo atributos y métodos.</div>
+
+<div class="question">¿Qué tipos de UML existen?</div>
+<div class="answer">Existen varios tipos de diagramas UML, incluyendo:
+    <ul>
+        <li>Diagrama de Clases</li>
+        <li>Diagrama de Secuencia</li>
+        <li>Diagrama de Casos de Uso</li>
+        <li>Diagrama de Actividad</li>
+        <li>Diagrama de Componentes</li>
+        <li>Diagrama de Despliegue</li>
+    </ul>
+</div>
+
+<div class="question">¿Qué metodologías ágiles conoces?</div>
+<div class="answer">Conozco metodologías ágiles como Scrum, Kanban y XP (Extreme Programming). Cada una tiene enfoques diferentes para la gestión de proyectos y desarrollo ágil.</div>
+
+<div class="question">¿Qué sirve el método hash code?</div>
+<div class="answer">El método <code>hashCode()</code> se utiliza para generar un valor hash entero único para un objeto, lo que permite su uso eficiente en estructuras de datos como HashMap y HashSet. Es importante sobrescribir este método junto con <code>equals()</code> para mantener la consistencia.</div>
+
+<div class="question">¿Cuáles son las 2 herramientas para programar en Java?</div>
+<div class="answer">Dos herramientas comunes para programar en Java son Eclipse y IntelliJ IDEA. Ambas ofrecen potentes características para el desarrollo de aplicaciones Java.</div>
+
+<div class="question">Diferencia entre interfaz y clase abstracta. ¿Cuándo usar una y cuándo otra?</div>
+<div class="answer">Una interfaz se utiliza para definir un contrato que las clases pueden implementar, sin proporcionar implementación. Una clase abstracta puede proporcionar una implementación parcial y permite definir estados. Se debe usar una interfaz cuando se desea definir un comportamiento común sin imponer una jerarquía de clases, y una clase abstracta cuando se desea compartir código común entre clases relacionadas.</div>
+
+<div class="question">¿Qué es una API Rest?</div>
+<div class="answer">Una API REST (Representational State Transfer) es un conjunto de reglas que permite la comunicación entre aplicaciones a través de HTTP, utilizando recursos identificados por URIs y proporcionando operaciones estándar como GET, POST, PUT y DELETE.</div>
+
+<div class="question">¿Qué es un modelo de datos?</div>
+<div class="answer">Un modelo de datos es una representación abstracta de la estructura y la organización de los datos en un sistema, incluyendo las entidades, atributos y relaciones entre ellas. Se utiliza para diseñar y estructurar bases de datos.</div>
+
+<div class="question">¿Qué son los servicios RESTful?</div>
+<div class="answer">Los servicios RESTful son servicios web que siguen los principios REST, permitiendo la comunicación entre sistemas mediante el intercambio de recursos a través de HTTP, utilizando un enfoque stateless y representaciones de recursos en formatos como JSON o XML.</div>
+
+<div class="question">¿Qué es un contenedor de servlets?</div>
+<div class="answer">Un contenedor de servlets es un entorno que gestiona la ejecución de servlets, proporcionando servicios como la gestión de ciclos de vida, gestión de sesiones y manejo de solicitudes y respuestas HTTP. Ejemplos de contenedores son Apache Tomcat y Jetty.</div>
+
+<div class="question">¿Cuáles son los tipos de clases que existen?</div>
+<div class="answer">Los tipos de clases en Java incluyen:
+    <ul>
+        <li>Clases concretas: Implementan la lógica y pueden instanciarse.</li>
+        <li>Clases abstractas: No se pueden instanciar y pueden contener métodos abstractos.</li>
+        <li>Interfaces: Definen un contrato sin implementación.</li>
+        <li>Clases anidadas: Clases definidas dentro de otras clases.</li>
+    </ul>
+</div>
+
+<div class="question">¿Qué es el ciclo de vida de un servlet?</div>
+<div class="answer">El ciclo de vida de un servlet se compone de las siguientes fases:
+    <ol>
+        <li>Inicialización: El contenedor de servlets carga el servlet y llama al método <code>init()</code>.</li>
+        <li>Servicio: El contenedor llama al método <code>service()</code> para manejar solicitudes.</li>
+        <li>Destrucción: El contenedor llama al método <code>destroy()</code> cuando el servlet se elimina.</li>
+    </ol>
+</div>
+
+<div class="question">¿Qué es Spring Security?</div>
+<div class="answer">Spring Security es un módulo del framework Spring que proporciona autenticación y autorización para aplicaciones Java, permitiendo gestionar la seguridad de manera flexible y personalizada.</div>
+
+<div class="question">¿Qué es Hibernate?</div>
+<div class="answer">Hibernate es un framework de mapeo objeto-relacional (ORM) que facilita la interacción con bases de datos mediante el uso de objetos Java, eliminando la necesidad de escribir consultas SQL complejas y proporcionando gestión automática de transacciones y conexiones.</div>
+
+<div class="question">¿Qué es el patrón DAO?</div>
+<div class="answer">El patrón DAO (Data Access Object) es un patrón de diseño que proporciona una interfaz abstracta para interactuar con la base de datos, separando la lógica de acceso a datos de la lógica de negocio. Permite cambiar la implementación de la base de datos sin afectar al resto de la aplicación.</div>
+
+<div class="question">¿Qué es el patrón MVC?</div>
+<div class="answer">El patrón MVC (Modelo-Vista-Controlador) es un patrón de diseño que separa la lógica de negocio (Modelo), la interfaz de usuario (Vista) y el control de la aplicación (Controlador), promoviendo la separación de preocupaciones y facilitando la mantenibilidad del código.</div>
+
+<div class="question">¿Qué es un middleware?</div>
+<div class="answer">Un middleware es un software que actúa como intermediario entre diferentes aplicaciones o servicios, facilitando la comunicación y la gestión de datos entre ellos. Se utiliza para implementar funciones como autenticación, autorización y registro.</div>
+
+<div class="question">¿Qué es el framework Spring?</div>
+<div class="answer">Spring es un framework de desarrollo de aplicaciones Java que proporciona una amplia variedad de herramientas y características para construir aplicaciones empresariales, facilitando la gestión de la configuración, la seguridad, la persistencia de datos y la creación de APIs REST.</div>
+
+<div class="question">¿Qué es el concepto de inyección de dependencias?</div>
+<div class="answer">La inyección de dependencias es un patrón de diseño que permite que un objeto reciba sus dependencias de un contenedor en lugar de crearlas por sí mismo. Esto promueve un diseño más flexible y mantenible, facilitando las pruebas unitarias y la gestión de dependencias en aplicaciones complejas.</div>
+
+<div class="question">¿Qué es un proyecto maven?</div>
+<div class="answer">Un proyecto Maven es un proyecto de software que utiliza Apache Maven como herramienta de gestión de proyectos, facilitando la construcción, gestión de dependencias y configuración de proyectos Java mediante un archivo de configuración <code>pom.xml</code>.</div>
+
+<div class="question">¿Cómo manejar errores en Java?</div>
+<div class="answer">Los errores en Java se manejan utilizando excepciones. Se pueden lanzar excepciones utilizando la palabra clave <code>throw</code> y se pueden capturar con bloques <code>try-catch</code>. También se pueden definir excepciones personalizadas extendiendo la clase <code>Exception</code>.</div>
+
+<div class="question">¿Cómo realizar conexiones a bases de datos en Java?</div>
+<div class="answer">Las conexiones a bases de datos en Java se pueden realizar utilizando JDBC (Java Database Connectivity). Se necesita cargar el controlador de la base de datos, establecer la conexión, crear una declaración y ejecutar consultas SQL. Alternativamente, se puede utilizar un framework ORM como Hibernate o Spring Data JPA para simplificar el proceso.</div>
+</div>
+
+
+<br>
+<br><br>
+<br>
+
+
+<footer>
+    <p>&copy; 2024 Fernando Leon Medina - Todos los derechos reservados</p>
+</footer>
+
+</body>
+
+</html>
