@@ -527,7 +527,99 @@
         izquierdo y derecho de cualquier nodo no puede ser mayor que uno. Esto permite que un árbol AVL mantenga un tiempo
         de búsqueda, inserción y eliminación en O(log n), mientras que en un árbol binario, estos tiempos pueden ser O(n)
         en el peor caso si el árbol no está balanceado.</div>
-  
+        <h1>Preguntas y Respuestas sobre Programación Funcional</h1>
+        <div class="container">
+          <div class="question">¿Qué es la programación funcional?</div>
+          <div class="answer">La programación funcional es un paradigma de programación en el que las funciones son tratadas como ciudadanos de primera clase. Esto significa que se pueden pasar como argumentos, retornar desde otras funciones y almacenarse en variables. Se enfoca en el uso de funciones puras, la inmutabilidad y la evitación de efectos secundarios.
+            <br><br>Ejemplo en Java:
+            <pre><code>Function&lt;Integer, Integer&gt; cuadrado = x -&gt; x * x;
+        System.out.println(cuadrado.apply(5));  // Salida: 25</code></pre>
+          </div>
+        
+          <div class="question">¿Qué es una función pura?</div>
+          <div class="answer">Una función pura es aquella que siempre devuelve el mismo resultado cuando se le da la misma entrada y no tiene efectos secundarios. Esto facilita la razonabilidad y pruebas de los programas.
+            <br><br>Ejemplo:
+            <pre><code>int suma(int a, int b) {
+            return a + b;  // Esta es una función pura
+        }</code></pre>
+          </div>
+        
+          <div class="question">¿Qué es la inmutabilidad en programación funcional?</div>
+          <div class="answer">La inmutabilidad es el principio según el cual los datos no pueden ser modificados una vez creados. En lugar de modificar los valores existentes, se crean nuevos valores, lo que previene efectos secundarios y errores impredecibles.
+            <br><br>Ejemplo en Java:
+            <pre><code>List&lt;Integer&gt; lista = Arrays.asList(1, 2, 3);
+        List&lt;Integer&gt; nuevaLista = lista.stream().map(x -&gt; x * 2).collect(Collectors.toList());</code></pre>
+          </div>
+        
+          <div class="question">¿Qué es una expresión lambda?</div>
+          <div class="answer">Una expresión lambda es una función anónima que puede ser tratada como cualquier otro objeto. Se utilizan principalmente para simplificar el código al representar funciones de una manera concisa y legible.
+            <br><br>Ejemplo en Java:
+            <pre><code>List&lt;String&gt; nombres = Arrays.asList("Ana", "Juan", "Pedro");
+        nombres.forEach(nombre -&gt; System.out.println(nombre));</code></pre>
+          </div>
+          <div class="question">¿Cuáles son los tipos de formato de una expresión lambda en Java?</div>
+<div class="answer">
+    Existen diferentes formas de escribir una expresión lambda en Java, dependiendo de la cantidad de parámetros y la longitud del cuerpo de la función:
+    <ul>
+        <li><b>Lambdas sin parámetros:</b> Se utilizan cuando no se necesita ningún argumento.
+            <br>Ejemplo:
+            <pre><code>() -> System.out.println("¡Hola Mundo!");</code></pre>
+        </li>
+        <li><b>Lambdas con un parámetro:</b> Si se tiene un solo parámetro, no es necesario rodearlo con paréntesis.
+            <br>Ejemplo:
+            <pre><code>x -> x * x;</code></pre>
+        </li>
+        <li><b>Lambdas con varios parámetros:</b> Se utilizan paréntesis para agrupar los parámetros.
+            <br>Ejemplo:
+            <pre><code>(x, y) -> x + y;</code></pre>
+        </li>
+        <li><b>Lambdas con varias líneas de código:</b> Se utiliza un bloque de código rodeado de llaves si la función tiene varias líneas.
+            <br>Ejemplo:
+            <pre><code>(x, y) -> {
+    int resultado = x + y;
+    System.out.println("Resultado: " + resultado);
+    return resultado;
+};</code></pre>
+        </li>
+    </ul>
+</div>
+<div class="question">Principales interfaces funcionales en Java</div>
+<div class="answer">
+    A continuación se presentan algunas de las interfaces funcionales más comunes en Java:
+    <ul>
+        <li><b>Consumer:</b> Representa una operación que acepta un solo argumento y no devuelve resultado. Se usa comúnmente para realizar acciones sobre los elementos de una colección.
+            <br>Ejemplo:
+            <pre><code>Consumer<String> imprimir = s -> System.out.println(s);</code></pre>
+        </li>
+        <li><b>Supplier:</b> Representa una función que no acepta argumentos y devuelve un resultado. Es útil para generar valores.
+            <br>Ejemplo:
+            <pre><code>Supplier<Double> generarAleatorio = () -> Math.random();</code></pre>
+        </li>
+        <li><b>Function:</b> Representa una función que acepta un argumento y devuelve un resultado. Permite transformar datos.
+            <br>Ejemplo:
+            <pre><code>Function<String, Integer> longitud = s -> s.length();</code></pre>
+        </li>
+        <li><b>BiFunction:</b> Similar a `Function`, pero acepta dos argumentos y devuelve un resultado. 
+            <br>Ejemplo:
+            <pre><code>BiFunction<Integer, Integer, Integer> suma = (a, b) -> a + b;</code></pre>
+        </li>
+        <li><b>Predicate:</b> Representa una función que acepta un argumento y devuelve un valor booleano. Se utiliza comúnmente para evaluar condiciones.
+            <br>Ejemplo:
+            <pre><code>Predicate<Integer> esPar = n -> n % 2 == 0;</code></pre>
+        </li>
+    </ul>
+</div>
+        
+          <div class="question">¿Qué es la composición de funciones?</div>
+          <div class="answer">La composición de funciones es el proceso de combinar dos o más funciones para producir una nueva función. Es fundamental en la programación funcional ya que permite construir funciones complejas a partir de funciones simples.
+            <br><br>Ejemplo en Java:
+            <pre><code>Function&lt;Integer, Integer&gt; doble = x -&gt; x * 2;
+        Function&lt;Integer, Integer&gt; cuadrado = x -&gt; x * x;
+        Function&lt;Integer, Integer&gt; dobleYCuadrado = doble.andThen(cuadrado);
+        System.out.println(dobleYCuadrado.apply(3));  // Salida: 36</code></pre>
+          </div>
+        </div>
+        
       
   
     </div>
