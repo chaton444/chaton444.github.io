@@ -521,6 +521,75 @@ nombres.add("Ana");
 
 <div class="question">¿Cómo realizar conexiones a bases de datos en Java?</div>
 <div class="answer">Las conexiones a bases de datos en Java se pueden realizar utilizando JDBC (Java Database Connectivity). Se necesita cargar el controlador de la base de datos, establecer la conexión, crear una declaración y ejecutar consultas SQL. Alternativamente, se puede utilizar un framework ORM como Hibernate o Spring Data JPA para simplificar el proceso.</div>
+<div class="question">¿Qué es Spring Boot?</div>
+<div class="answer">Spring Boot es un proyecto de Spring que simplifica la creación de aplicaciones Java basadas en Spring. Proporciona configuraciones automáticas y herramientas para facilitar el desarrollo y despliegue.</div>
+
+<div class="question">¿Qué es un archivo `application.properties`?</div>
+<div class="answer">El archivo `application.properties` es un archivo de configuración utilizado por Spring Boot para definir propiedades de la aplicación, como la configuración de la base de datos, el puerto del servidor y otros ajustes específicos.</div>
+
+<div class="question">¿Cómo se puede manejar la configuración en diferentes entornos en Spring Boot?</div>
+<div class="answer">Se pueden utilizar perfiles en Spring Boot para gestionar diferentes configuraciones según el entorno. Se pueden crear archivos como `application-dev.properties` y `application-prod.properties` para definir configuraciones específicas para desarrollo y producción.</div>
+
+<div class="question">¿Qué es el concepto de "auto-configuración" en Spring Boot?</div>
+<div class="answer">La auto-configuración en Spring Boot permite que el framework configure automáticamente los beans y servicios necesarios según las dependencias disponibles en el classpath, reduciendo así la necesidad de configuración manual.</div>
+
+<div class="question">¿Cómo se pueden crear APIs REST en Spring Boot?</div>
+<div class="answer">Se pueden crear APIs REST utilizando las anotaciones @RestController y @RequestMapping. Por ejemplo:
+<pre><code>@RestController
+@RequestMapping("/api")
+public class UsuarioController {
+    @GetMapping("/usuarios")
+    public List<Usuario> obtenerUsuarios() {
+        return usuarioService.listarUsuarios();
+    }
+}</code></pre></div>
+
+<div class="question">¿Qué es un `@RestController` en Spring Boot?</div>
+<div class="answer">`@RestController` es una especialización de la anotación `@Controller`, que indica que los métodos de la clase son controladores REST. Los métodos se serializan automáticamente a JSON o XML según el contenido solicitado.</div>
+
+<div class="question">¿Qué es un `@Bean` en Spring Boot?</div>
+<div class="answer">La anotación `@Bean` se utiliza para declarar un método que devuelve un objeto que debe ser gestionado por el contenedor de Spring como un bean. Permite configurar objetos de forma programática.</div>
+
+<div class="question">¿Cómo se manejan las excepciones en Spring Boot?</div>
+<div class="answer">Las excepciones se pueden manejar utilizando `@ControllerAdvice` para crear un controlador global de excepciones. También se pueden manejar excepciones específicas utilizando la anotación `@ExceptionHandler`.</div>
+
+<div class="question">¿Qué es Spring Data JPA?</div>
+<div class="answer">Spring Data JPA es un proyecto que proporciona una forma simplificada de interactuar con bases de datos utilizando la API JPA (Java Persistence API). Permite crear repositorios para gestionar entidades sin necesidad de implementar métodos de acceso a datos.</div>
+
+<div class="question">¿Qué es un `@Configuration` en Spring Boot?</div>
+<div class="answer">`@Configuration` es una anotación que indica que la clase contiene uno o más métodos de `@Bean`. Se utiliza para definir la configuración de la aplicación y la creación de beans en el contexto de Spring.</div>
+
+<div class="question">¿Cómo se inyectan dependencias en Spring Boot?</div>
+<div class="answer">La inyección de dependencias en Spring Boot se realiza utilizando la anotación `@Autowired`, que permite que Spring gestione la creación y la inyección de instancias de beans en las clases que las necesitan.</div>
+
+<div class="question">¿Cómo se puede realizar la autenticación y autorización en una aplicación Spring Boot?</div>
+<div class="answer">Se puede utilizar Spring Security para implementar autenticación y autorización en aplicaciones Spring Boot. Esto incluye la configuración de filtros de seguridad y la definición de roles y permisos para los usuarios.</div>
+
+<div class="question">¿Qué es un `@Value` en Spring Boot?</div>
+<div class="answer">La anotación `@Value` se utiliza para inyectar valores de propiedades externas (como el archivo `application.properties`) en campos de la clase. Por ejemplo:
+<pre><code>@Value("${app.nombre}")
+private String nombreApp;</code></pre></div>
+
+<div class="question">¿Cómo se puede hacer un test unitario en una aplicación Spring Boot?</div>
+<div class="answer">Se pueden realizar pruebas unitarias en Spring Boot utilizando la biblioteca JUnit y la anotación `@SpringBootTest`, que carga el contexto de la aplicación para probar componentes específicos. Por ejemplo:
+<pre><code>@SpringBootTest
+public class UsuarioServiceTest {
+    @Autowired
+    private UsuarioService usuarioService;
+
+    @Test
+    public void testObtenerUsuarios() {
+        // Prueba lógica aquí
+    }
+}</code></pre></div>
+
+<div class="question">¿Qué es `Spring Boot Actuator`?</div>
+<div class="answer">`Spring Boot Actuator` proporciona funcionalidades para monitorear y gestionar aplicaciones Spring Boot. Ofrece varios puntos finales para verificar la salud, métricas y otros aspectos de la aplicación en tiempo de ejecución.</div>
+
+<div class="question">¿Qué es `@Transactional` en Spring Boot?</div>
+<div class="answer">La anotación `@Transactional` se utiliza para definir límites transaccionales en métodos o clases. Esto asegura que todas las operaciones dentro de la transacción se completen correctamente o se deshagan en caso de error.</div>
+
+
 </div>
 
 
